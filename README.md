@@ -4,9 +4,9 @@ Idea taken from BigClive:
 [https://www.reddit.com/r/BigCliveDotCom/comments/tcny85/simple_nimh_battery_charger_with_pcb_files/]
 
 In order to know when the batteries might be charged my plan was to use the timer and a LED. 
-I need a 24 hour timer and 555 adds more complications and cannot have 24 hours times.
+I need a 24 hour timer and 555 adds more complications and cannot have 24 hours delays.
 Then I tried to get a more modern timer solution but at the end it's much cheaper to use cheap MCU.
-They it seems wastefull to use MCU only as a timer so I'll ad some fluff to it and maybe connect more batteries to one.
+That seems wastefull to use MCU only as a timer so I'll ad some fluff to it and maybe connect more batteries to one.
 
 For detecting battery and the timers used ch32v003fun:
 [https://github.com/cnlohr/ch32v003fun?tab=readme-ov-file]
