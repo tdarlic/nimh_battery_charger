@@ -9,6 +9,9 @@ For detecting battery and the timers used ch32v003fun:
 Example of the dev board:
 [https://oshwlab.com/wagiminator/ch32v003f4p6-development-board]
 
+Development board github:
+[https://github.com/wuxx/nanoCH32V003]
+
 To use the WCH-LinkE on Linux, you need to grant access permissions beforehand by executing the following commands:
 
 ```shell
@@ -32,3 +35,10 @@ WCH-LinkE      DevBoard
 
 ## Quick reference
 ![ch32v003f4u6](https://raw.githubusercontent.com/Tengo10/pinout-overview/main/pinouts/CH32v003/ch32v003f4u6.svg)
+
+
+## Dev board pinout
+![ch32v003f4u6](./images/CH32V003-Development-Board-5.jpg)
+
+## Dev board schematic (for different MCU)
+![ch32v003f4u6](./images/36106731c64941528ee92b157d8d4ac0.png)
