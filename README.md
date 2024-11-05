@@ -40,9 +40,8 @@ To upload firmware and perform debugging, you need to ensure that the developmen
 ## Quick reference
 ![ch32v003f4u6](https://raw.githubusercontent.com/Tengo10/pinout-overview/main/pinouts/CH32v003/ch32v003f4u6.svg)
 
-
 ## Dev board pinout
 ![ch32v003f4u6](./images/CH32V003-Development-Board-5.jpg)
 
-## Dev board schematic (for different MCU)
-![ch32v003f4u6](./images/36106731c64941528ee92b157d8d4ac0.png)
+## Dev board schematic 
+![ch32v003f4u6](./images/nanoCH32V003.png)
