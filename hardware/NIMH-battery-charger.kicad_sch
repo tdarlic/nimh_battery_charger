@@ -2978,16 +2978,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 76.2) (xy 30.48 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e40c8c7-d1b1-427e-8b4a-ba183a1238ae")
-	)
-	(wire
-		(pts
 			(xy 132.08 60.96) (xy 147.32 60.96)
 		)
 		(stroke
@@ -3348,13 +3338,13 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 66.04) (xy 30.48 68.58)
+			(xy 30.48 66.04) (xy 30.48 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fda28c2c-d193-4aa5-9f5e-05f7b46e15c2")
+		(uuid "fec8e392-d458-4c80-88fa-350bb6834f05")
 	)
 	(image
 		(at 233.68 143.51)
@@ -10458,76 +10448,6 @@
 			(project "NIMH-battery-charger"
 				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
 					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 30.48 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3da03d6d-f90f-4435-9ede-9ca093e11559")
-		(property "Reference" "R3"
-			(at 33.02 71.1199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0R"
-			(at 33.02 73.6599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 28.702 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 30.48 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cf2d9ac4-c48a-4c66-aae0-5f357d20ade4")
-		)
-		(pin "1"
-			(uuid "c131d730-6732-4581-b41c-881ba3343ad4")
-		)
-		(instances
-			(project "NIMH-battery-charger"
-				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
-					(reference "R3")
 					(unit 1)
 				)
 			)
