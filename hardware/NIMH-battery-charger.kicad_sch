@@ -2321,10 +2321,34 @@
 		(uuid "417c16e0-22e4-4be6-a2ca-6da030777e6c")
 	)
 	(junction
+		(at 185.42 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e60cd34-e04b-4bdc-8707-01e8e0897da6")
+	)
+	(junction
+		(at 176.53 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb6d2de1-15b5-4858-835c-a7e361fcfb2a")
+	)
+	(junction
 		(at 80.01 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dc7d8328-6814-48de-95d5-247d337866f2")
+	)
+	(junction
+		(at 158.75 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb4091e5-2fcd-4f84-8823-400dc998bfc7")
+	)
+	(junction
+		(at 167.64 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc37022d-48b4-45ec-b34f-837c90664d00")
 	)
 	(no_connect
 		(at 53.34 55.88)
@@ -2336,7 +2360,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 58.42) (xy 147.32 58.42)
+			(xy 132.08 58.42) (xy 194.31 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2346,7 +2370,17 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 54.61) (xy 238.76 60.96)
+			(xy 176.53 25.4) (xy 176.53 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "065486a6-aa42-4f37-9923-b6b9f91a9497")
+	)
+	(wire
+		(pts
+			(xy 248.92 53.34) (xy 248.92 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2356,13 +2390,23 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 68.58) (xy 208.28 76.2)
+			(xy 218.44 67.31) (xy 218.44 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0e10dc92-a06c-4d7b-8f3a-ff39f43614d0")
+	)
+	(wire
+		(pts
+			(xy 167.64 33.02) (xy 167.64 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10a8215a-28fc-4d72-9531-3298cd8ca0ea")
 	)
 	(wire
 		(pts
@@ -2396,7 +2440,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 48.26) (xy 147.32 48.26)
+			(xy 132.08 48.26) (xy 167.64 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2406,7 +2450,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 43.18) (xy 238.76 46.99)
+			(xy 248.92 41.91) (xy 248.92 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2423,6 +2467,36 @@
 			(type default)
 		)
 		(uuid "22bb1d41-392a-4582-ae82-997fb7b228bc")
+	)
+	(wire
+		(pts
+			(xy 176.53 22.86) (xy 185.42 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23b2a855-627d-432a-b9f7-0e1a1b8db05a")
+	)
+	(wire
+		(pts
+			(xy 194.31 41.91) (xy 194.31 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2463115e-48f0-4d34-b65b-c06dc95976fe")
+	)
+	(wire
+		(pts
+			(xy 176.53 41.91) (xy 176.53 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26720c28-a84f-4809-b218-e9980af45539")
 	)
 	(wire
 		(pts
@@ -2446,7 +2520,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 83.82) (xy 223.52 86.36)
+			(xy 233.68 82.55) (xy 233.68 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2456,7 +2530,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 54.61) (xy 223.52 60.96)
+			(xy 233.68 53.34) (xy 233.68 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2486,7 +2560,17 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 43.18) (xy 252.73 46.99)
+			(xy 158.75 20.32) (xy 158.75 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "406ab412-7260-4f87-914a-13a3083a8378")
+	)
+	(wire
+		(pts
+			(xy 262.89 41.91) (xy 262.89 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2506,7 +2590,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 43.18) (xy 208.28 46.99)
+			(xy 218.44 41.91) (xy 218.44 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2523,6 +2607,26 @@
 			(type default)
 		)
 		(uuid "4aaf103b-bb6f-45f1-a7d6-144279128e4d")
+	)
+	(wire
+		(pts
+			(xy 158.75 33.02) (xy 158.75 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e2220c7-8929-40eb-b470-bac94be4c9e7")
+	)
+	(wire
+		(pts
+			(xy 194.31 25.4) (xy 194.31 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5033ad20-9445-4500-8157-8723c34043d3")
 	)
 	(wire
 		(pts
@@ -2546,6 +2650,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 25.4) (xy 167.64 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c49850e-6ca8-479a-a462-6d3d0c0193e2")
+	)
+	(wire
+		(pts
 			(xy 41.91 152.4) (xy 55.88 152.4)
 		)
 		(stroke
@@ -2556,7 +2670,17 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 83.82) (xy 238.76 86.36)
+			(xy 185.42 25.4) (xy 185.42 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ee26a6f-86d2-453b-9c24-f92992f19634")
+	)
+	(wire
+		(pts
+			(xy 248.92 82.55) (xy 248.92 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2596,7 +2720,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 68.58) (xy 223.52 76.2)
+			(xy 233.68 67.31) (xy 233.68 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2646,7 +2770,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 43.18) (xy 223.52 46.99)
+			(xy 233.68 41.91) (xy 233.68 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2696,6 +2820,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 33.02) (xy 194.31 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9062ffde-8976-4361-8972-7c9b050a392e")
+	)
+	(wire
+		(pts
 			(xy 132.08 63.5) (xy 147.32 63.5)
 		)
 		(stroke
@@ -2703,6 +2837,16 @@
 			(type default)
 		)
 		(uuid "92a88e45-9f2e-48a3-b724-ede270f78d30")
+	)
+	(wire
+		(pts
+			(xy 176.53 33.02) (xy 176.53 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96bf028f-bf6a-4d02-9fc5-8381b44e908d")
 	)
 	(wire
 		(pts
@@ -2716,7 +2860,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 68.58) (xy 252.73 76.2)
+			(xy 262.89 67.31) (xy 262.89 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2726,7 +2870,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 53.34) (xy 147.32 53.34)
+			(xy 132.08 53.34) (xy 185.42 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2736,13 +2880,23 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 45.72) (xy 147.32 45.72)
+			(xy 132.08 45.72) (xy 158.75 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b4b1dead-6280-4072-935e-8a5683b6a9a8")
+	)
+	(wire
+		(pts
+			(xy 158.75 22.86) (xy 167.64 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5d2b95f-5b24-4987-a25c-cd705b1feafa")
 	)
 	(wire
 		(pts
@@ -2776,6 +2930,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 41.91) (xy 185.42 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be58e3bc-11d8-4725-b6fc-f5710bc6b1f6")
+	)
+	(wire
+		(pts
 			(xy 128.27 129.54) (xy 140.97 129.54)
 		)
 		(stroke
@@ -2786,7 +2950,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 83.82) (xy 208.28 86.36)
+			(xy 218.44 82.55) (xy 218.44 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2806,7 +2970,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 83.82) (xy 252.73 86.36)
+			(xy 262.89 82.55) (xy 262.89 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2816,7 +2980,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 50.8) (xy 147.32 50.8)
+			(xy 132.08 50.8) (xy 176.53 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2826,7 +2990,17 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 68.58) (xy 238.76 76.2)
+			(xy 167.64 41.91) (xy 167.64 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4506335-6dd8-4594-8634-4c5214f0817e")
+	)
+	(wire
+		(pts
+			(xy 248.92 67.31) (xy 248.92 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2856,6 +3030,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 41.91) (xy 158.75 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e01f3a14-8b61-43b0-8a81-2978d4b87d3e")
+	)
+	(wire
+		(pts
 			(xy 41.91 154.94) (xy 59.69 154.94)
 		)
 		(stroke
@@ -2866,7 +3050,17 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 54.61) (xy 208.28 60.96)
+			(xy 158.75 22.86) (xy 158.75 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1fdc2d8-3caa-41ac-a777-f414358880cd")
+	)
+	(wire
+		(pts
+			(xy 218.44 53.34) (xy 218.44 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2896,7 +3090,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 54.61) (xy 252.73 60.96)
+			(xy 262.89 53.34) (xy 262.89 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2913,6 +3107,36 @@
 			(type default)
 		)
 		(uuid "e6c04eef-2850-4294-90a6-6082b0fa3cfb")
+	)
+	(wire
+		(pts
+			(xy 185.42 33.02) (xy 185.42 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7e3fd22-5294-41a8-9575-826a03e47309")
+	)
+	(wire
+		(pts
+			(xy 167.64 22.86) (xy 176.53 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb5cd0d9-6cea-43ad-be94-82e6e49afe72")
+	)
+	(wire
+		(pts
+			(xy 185.42 22.86) (xy 194.31 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f03d4805-bb54-4283-aa96-6aa064d76c2e")
 	)
 	(wire
 		(pts
@@ -9319,7 +9543,7 @@
 		(uuid "6a728a18-b851-40a6-b8ac-efc473172725")
 	)
 	(label "ADC4"
-		(at 252.73 69.85 270)
+		(at 262.89 68.58 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9396,7 +9620,7 @@
 		(uuid "a5af23da-1887-4ecc-99b8-dddb7165813c")
 	)
 	(label "ADC2"
-		(at 223.52 69.85 270)
+		(at 233.68 68.58 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9407,7 +9631,7 @@
 		(uuid "aac4e30d-d38b-4a55-bac0-14516852f9b5")
 	)
 	(label "ADC3"
-		(at 238.76 69.85 270)
+		(at 248.92 68.58 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9418,7 +9642,7 @@
 		(uuid "cbdb5d01-e7f7-420e-aba9-7026efdf8bfa")
 	)
 	(label "ADC1"
-		(at 208.28 69.85 270)
+		(at 218.44 68.58 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9441,7 +9665,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 252.73 81.28 0)
+		(at 262.89 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9450,7 +9674,7 @@
 		(fields_autoplaced yes)
 		(uuid "16985d5d-ec94-4476-829d-1afe53c809c6")
 		(property "Reference" "BT4"
-			(at 256.54 78.1684 0)
+			(at 266.7 76.8984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9459,7 +9683,7 @@
 			)
 		)
 		(property "Value" "Battery"
-			(at 256.54 80.7084 0)
+			(at 266.7 79.4384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9468,7 +9692,7 @@
 			)
 		)
 		(property "Footprint" "Special_Local:UM-3X1-AA"
-			(at 252.73 79.756 90)
+			(at 262.89 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9477,7 +9701,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 79.756 90)
+			(at 262.89 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9486,7 +9710,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 252.73 81.28 0)
+			(at 262.89 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9504,6 +9728,76 @@
 			(project "NIMH-battery-charger"
 				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
 					(reference "BT4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 194.31 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1876b5eb-5524-4d01-9b3b-cde35e03dddc")
+		(property "Reference" "D10"
+			(at 198.12 38.4174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 198.12 40.9574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+			(at 194.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 194.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c467beb1-3987-4ed4-8970-b37211f08b65")
+		)
+		(pin "1"
+			(uuid "dfe64edb-1277-42f2-972c-9f74051ba316")
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -9577,7 +9871,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 223.52 43.18 0)
+		(at 233.68 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9586,7 +9880,7 @@
 		(fields_autoplaced yes)
 		(uuid "2f750fe4-15a6-4962-9e77-f796a9623514")
 		(property "Reference" "#PWR09"
-			(at 223.52 46.99 0)
+			(at 233.68 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9595,7 +9889,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 223.52 38.1 0)
+			(at 233.68 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9603,7 +9897,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 43.18 0)
+			(at 233.68 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9612,7 +9906,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 43.18 0)
+			(at 233.68 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9621,7 +9915,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 223.52 43.18 0)
+			(at 233.68 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9843,6 +10137,76 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 185.42 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d94ecd2-9494-4369-963b-f4e7c2798ab5")
+		(property "Reference" "R9"
+			(at 187.96 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220R"
+			(at 187.96 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 183.642 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 185.42 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "adc8606d-d5e5-49d5-a1b2-3fea33188519")
+		)
+		(pin "1"
+			(uuid "03727b7c-bba3-4c86-af99-30ab19ef5914")
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 30.48 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9913,7 +10277,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 208.28 81.28 0)
+		(at 218.44 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9922,7 +10286,7 @@
 		(fields_autoplaced yes)
 		(uuid "3f73e1e3-e918-4351-9d08-7adf5c042335")
 		(property "Reference" "BT1"
-			(at 212.09 78.1684 0)
+			(at 222.25 76.8984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9931,7 +10295,7 @@
 			)
 		)
 		(property "Value" "Battery"
-			(at 212.09 80.7084 0)
+			(at 222.25 79.4384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9940,7 +10304,7 @@
 			)
 		)
 		(property "Footprint" "Special_Local:UM-3X1-AA"
-			(at 208.28 79.756 90)
+			(at 218.44 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9949,7 +10313,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 208.28 79.756 90)
+			(at 218.44 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9958,7 +10322,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 208.28 81.28 0)
+			(at 218.44 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9983,7 +10347,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 252.73 64.77 0)
+		(at 262.89 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9992,7 +10356,7 @@
 		(fields_autoplaced yes)
 		(uuid "400e7a87-64ac-41b2-9650-7a9b93cb86f9")
 		(property "Reference" "R5"
-			(at 255.27 63.4999 0)
+			(at 265.43 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10001,7 +10365,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 255.27 66.0399 0)
+			(at 265.43 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10010,7 +10374,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 250.952 64.77 90)
+			(at 261.112 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10019,7 +10383,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 64.77 0)
+			(at 262.89 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10028,7 +10392,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 252.73 64.77 0)
+			(at 262.89 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10053,16 +10417,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 208.28 43.18 0)
+		(at 158.75 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4a4cdb0d-ca3d-4833-9d93-b07960838b07")
-		(property "Reference" "#PWR01"
-			(at 208.28 46.99 0)
+		(uuid "46928f6f-c9cf-4a66-96df-e19766c72fdd")
+		(property "Reference" "#PWR013"
+			(at 158.75 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10071,7 +10435,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 208.28 38.1 0)
+			(at 158.75 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10079,7 +10443,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 208.28 43.18 0)
+			(at 158.75 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10088,7 +10452,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.28 43.18 0)
+			(at 158.75 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10097,7 +10461,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 208.28 43.18 0)
+			(at 158.75 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46578ec4-773d-4932-9860-7060b831430e")
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 218.44 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a4cdb0d-ca3d-4833-9d93-b07960838b07")
+		(property "Reference" "#PWR01"
+			(at 218.44 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 218.44 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 218.44 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10184,7 +10614,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 252.73 86.36 0)
+		(at 262.89 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10193,7 +10623,7 @@
 		(fields_autoplaced yes)
 		(uuid "4d866253-86d2-4113-a580-64d4ee30e22c")
 		(property "Reference" "#PWR019"
-			(at 252.73 92.71 0)
+			(at 262.89 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10202,7 +10632,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 252.73 91.44 0)
+			(at 262.89 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10210,7 +10640,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 86.36 0)
+			(at 262.89 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10219,7 +10649,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 86.36 0)
+			(at 262.89 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10228,7 +10658,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 252.73 86.36 0)
+			(at 262.89 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10316,7 +10746,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 175.26 49.53 90)
+		(at 158.75 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10325,7 +10755,7 @@
 		(fields_autoplaced yes)
 		(uuid "5e0b970c-4695-4e72-8e6b-2ca3b54183e7")
 		(property "Reference" "D5"
-			(at 179.07 49.8474 90)
+			(at 162.56 38.4174 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10334,7 +10764,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 179.07 52.3874 90)
+			(at 162.56 40.9574 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10342,8 +10772,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 175.26 49.53 0)
+		(property "Footprint" "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+			(at 158.75 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10352,7 +10782,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 175.26 49.53 0)
+			(at 158.75 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10361,7 +10791,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 175.26 49.53 0)
+			(at 158.75 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10518,7 +10948,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 238.76 64.77 0)
+		(at 248.92 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10527,7 +10957,7 @@
 		(fields_autoplaced yes)
 		(uuid "66e4360b-2397-40a9-9e2b-8ed997263f1b")
 		(property "Reference" "R4"
-			(at 241.3 63.4999 0)
+			(at 251.46 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10536,7 +10966,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 241.3 66.0399 0)
+			(at 251.46 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10545,7 +10975,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 236.982 64.77 90)
+			(at 247.142 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10554,7 +10984,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 238.76 64.77 0)
+			(at 248.92 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10563,7 +10993,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 238.76 64.77 0)
+			(at 248.92 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10588,7 +11018,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 238.76 43.18 0)
+		(at 248.92 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10597,7 +11027,7 @@
 		(fields_autoplaced yes)
 		(uuid "67c9aaf4-1469-45e6-9843-911f1115dbda")
 		(property "Reference" "#PWR016"
-			(at 238.76 46.99 0)
+			(at 248.92 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10606,7 +11036,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 238.76 38.1 0)
+			(at 248.92 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10614,7 +11044,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 238.76 43.18 0)
+			(at 248.92 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10623,7 +11053,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 43.18 0)
+			(at 248.92 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10632,7 +11062,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 238.76 43.18 0)
+			(at 248.92 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10720,7 +11150,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 208.28 64.77 0)
+		(at 218.44 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10729,7 +11159,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d5d0661-ea20-43da-9037-e57273f9b644")
 		(property "Reference" "R1"
-			(at 210.82 63.4999 0)
+			(at 220.98 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10738,7 +11168,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 210.82 66.0399 0)
+			(at 220.98 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10747,7 +11177,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 206.502 64.77 90)
+			(at 216.662 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10756,7 +11186,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 208.28 64.77 0)
+			(at 218.44 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10765,7 +11195,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 208.28 64.77 0)
+			(at 218.44 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11063,6 +11493,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 167.64 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77993b01-8c55-4eab-86fe-3419e0937394")
+		(property "Reference" "R7"
+			(at 170.18 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220R"
+			(at 170.18 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 165.862 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 167.64 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dc16b98c-6eb9-4915-ba81-52ae02f310c1")
+		)
+		(pin "1"
+			(uuid "30caea81-9bb2-441b-b24d-c1344301dde9")
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 147.32 78.74 270)
 		(unit 1)
@@ -11197,7 +11697,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 208.28 86.36 0)
+		(at 218.44 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11206,7 +11706,7 @@
 		(fields_autoplaced yes)
 		(uuid "8f17c584-508a-4c63-881f-d6b7670aa542")
 		(property "Reference" "#PWR02"
-			(at 208.28 92.71 0)
+			(at 218.44 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11215,7 +11715,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 208.28 91.44 0)
+			(at 218.44 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11223,7 +11723,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 208.28 86.36 0)
+			(at 218.44 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11232,7 +11732,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.28 86.36 0)
+			(at 218.44 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11241,7 +11741,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 208.28 86.36 0)
+			(at 218.44 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11411,8 +11911,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 194.31 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97ae298c-82b3-4f12-a183-0955a493a158")
+		(property "Reference" "R10"
+			(at 196.85 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220R"
+			(at 196.85 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 192.532 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 194.31 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1c36b74f-7e87-4b39-a6d5-0b8e4c0d9c55")
+		)
+		(pin "1"
+			(uuid "84023fb3-a040-4af2-abe8-00c4ccad759d")
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_Diode_AKL:1N4001")
-		(at 223.52 50.8 270)
+		(at 233.68 49.53 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11421,7 +11991,7 @@
 		(fields_autoplaced yes)
 		(uuid "9b3fa7c7-bfde-4100-8f0c-edb04c83ee87")
 		(property "Reference" "D2"
-			(at 226.06 49.5299 90)
+			(at 236.22 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11430,7 +12000,7 @@
 			)
 		)
 		(property "Value" "1N4001"
-			(at 226.06 52.0699 90)
+			(at 236.22 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11439,7 +12009,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_SOD-323_BigPads"
-			(at 223.52 50.8 0)
+			(at 233.68 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11448,7 +12018,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tme.eu/Document/5f8ffc5ac30fc86bac97d66040bf5502/1n400x.pdf"
-			(at 223.52 50.8 0)
+			(at 233.68 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11457,7 +12027,7 @@
 			)
 		)
 		(property "Description" "DO-41 Diode, Rectifier, 50V 1A, Alternate KiCad Library"
-			(at 223.52 50.8 0)
+			(at 233.68 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11482,7 +12052,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 223.52 64.77 0)
+		(at 233.68 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11491,7 +12061,7 @@
 		(fields_autoplaced yes)
 		(uuid "a109c5f3-2b03-4898-ba02-d62fb468ba9d")
 		(property "Reference" "R2"
-			(at 226.06 63.4999 0)
+			(at 236.22 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11500,7 +12070,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 226.06 66.0399 0)
+			(at 236.22 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11509,7 +12079,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 221.742 64.77 90)
+			(at 231.902 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11518,7 +12088,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 223.52 64.77 0)
+			(at 233.68 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11527,7 +12097,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 223.52 64.77 0)
+			(at 233.68 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11552,7 +12122,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Diode_AKL:1N4001")
-		(at 208.28 50.8 270)
+		(at 218.44 49.53 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11561,7 +12131,7 @@
 		(fields_autoplaced yes)
 		(uuid "a16308c4-4a70-4991-977a-47d7ac3077c2")
 		(property "Reference" "D1"
-			(at 210.82 49.5299 90)
+			(at 220.98 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11570,7 +12140,7 @@
 			)
 		)
 		(property "Value" "1N4001"
-			(at 210.82 52.0699 90)
+			(at 220.98 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11579,7 +12149,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_SOD-323_BigPads"
-			(at 208.28 50.8 0)
+			(at 218.44 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11588,7 +12158,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tme.eu/Document/5f8ffc5ac30fc86bac97d66040bf5502/1n400x.pdf"
-			(at 208.28 50.8 0)
+			(at 218.44 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11597,7 +12167,7 @@
 			)
 		)
 		(property "Description" "DO-41 Diode, Rectifier, 50V 1A, Alternate KiCad Library"
-			(at 208.28 50.8 0)
+			(at 218.44 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11615,6 +12185,76 @@
 			(project ""
 				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 158.75 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa8cb947-2bbb-4920-90a6-118a476e134a")
+		(property "Reference" "R6"
+			(at 161.29 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220R"
+			(at 161.29 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 156.972 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 158.75 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0cee3c3e-3782-4cd1-b96b-806bec3dcb9f")
+		)
+		(pin "1"
+			(uuid "bdc58ade-55bc-42c4-b254-48d82e39ac98")
+		)
+		(instances
+			(project ""
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -11688,7 +12328,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 223.52 81.28 0)
+		(at 233.68 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11697,7 +12337,7 @@
 		(fields_autoplaced yes)
 		(uuid "b30e2670-2c8e-4356-8804-40404b78e228")
 		(property "Reference" "BT2"
-			(at 227.33 78.1684 0)
+			(at 237.49 76.8984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11706,7 +12346,7 @@
 			)
 		)
 		(property "Value" "Battery"
-			(at 227.33 80.7084 0)
+			(at 237.49 79.4384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11715,7 +12355,7 @@
 			)
 		)
 		(property "Footprint" "Special_Local:UM-3X1-AA"
-			(at 223.52 79.756 90)
+			(at 233.68 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11724,7 +12364,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 223.52 79.756 90)
+			(at 233.68 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11733,7 +12373,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 223.52 81.28 0)
+			(at 233.68 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11757,8 +12397,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 176.53 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b846a9cb-8982-44ce-b1e1-dae797d00f59")
+		(property "Reference" "D7"
+			(at 180.34 38.4174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 180.34 40.9574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+			(at 176.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 176.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c12d760c-5193-451b-8eaa-9b56b3d8e8d1")
+		)
+		(pin "1"
+			(uuid "7a4900ce-cacf-4389-96cb-30392df752db")
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
-		(at 252.73 43.18 0)
+		(at 262.89 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11767,7 +12477,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba1b9f71-ad3c-4a2e-949a-d6bbd1ec059c")
 		(property "Reference" "#PWR018"
-			(at 252.73 46.99 0)
+			(at 262.89 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11776,7 +12486,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 252.73 38.1 0)
+			(at 262.89 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11784,7 +12494,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 43.18 0)
+			(at 262.89 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11793,7 +12503,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 43.18 0)
+			(at 262.89 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11802,7 +12512,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 252.73 43.18 0)
+			(at 262.89 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11945,6 +12655,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 176.53 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca211297-4931-4691-a196-85a1c0fc7cd8")
+		(property "Reference" "R8"
+			(at 179.07 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220R"
+			(at 179.07 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 174.752 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 176.53 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c26e5b26-4c6a-470e-9df5-b956b9df7fd8")
+		)
+		(pin "1"
+			(uuid "eedf39d8-f377-480c-ac1f-8e627d1f04e3")
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 140.97 137.16 0)
 		(unit 1)
@@ -12080,7 +12860,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Diode_AKL:1N4001")
-		(at 238.76 50.8 270)
+		(at 248.92 49.53 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12089,7 +12869,7 @@
 		(fields_autoplaced yes)
 		(uuid "d3b68423-17f4-459b-894a-d7abedc038d7")
 		(property "Reference" "D3"
-			(at 241.3 49.5299 90)
+			(at 251.46 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12098,7 +12878,7 @@
 			)
 		)
 		(property "Value" "1N4001"
-			(at 241.3 52.0699 90)
+			(at 251.46 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12107,7 +12887,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_SOD-323_BigPads"
-			(at 238.76 50.8 0)
+			(at 248.92 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12116,7 +12896,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tme.eu/Document/5f8ffc5ac30fc86bac97d66040bf5502/1n400x.pdf"
-			(at 238.76 50.8 0)
+			(at 248.92 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12125,7 +12905,7 @@
 			)
 		)
 		(property "Description" "DO-41 Diode, Rectifier, 50V 1A, Alternate KiCad Library"
-			(at 238.76 50.8 0)
+			(at 248.92 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12281,7 +13061,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 238.76 81.28 0)
+		(at 248.92 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12290,7 +13070,7 @@
 		(fields_autoplaced yes)
 		(uuid "e9a112cb-1d2c-449a-832a-e0ec92d04810")
 		(property "Reference" "BT3"
-			(at 242.57 78.1684 0)
+			(at 252.73 76.8984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12299,7 +13079,7 @@
 			)
 		)
 		(property "Value" "Battery"
-			(at 242.57 80.7084 0)
+			(at 252.73 79.4384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12308,7 +13088,7 @@
 			)
 		)
 		(property "Footprint" "Special_Local:UM-3X1-AA"
-			(at 238.76 79.756 90)
+			(at 248.92 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12317,7 +13097,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 238.76 79.756 90)
+			(at 248.92 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12326,7 +13106,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 238.76 81.28 0)
+			(at 248.92 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12419,7 +13199,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 223.52 86.36 0)
+		(at 233.68 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12428,7 +13208,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec1312a8-98f8-481f-b6f7-9096950a7121")
 		(property "Reference" "#PWR010"
-			(at 223.52 92.71 0)
+			(at 233.68 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12437,7 +13217,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 223.52 91.44 0)
+			(at 233.68 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12445,7 +13225,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 86.36 0)
+			(at 233.68 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12454,7 +13234,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 86.36 0)
+			(at 233.68 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12463,7 +13243,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 223.52 86.36 0)
+			(at 233.68 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12478,6 +13258,76 @@
 			(project "NIMH-battery-charger"
 				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 185.42 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edebfc97-0c12-4559-99dd-30d99556c379")
+		(property "Reference" "D8"
+			(at 189.23 38.4174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 189.23 40.9574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+			(at 185.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 185.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c129cc78-97ba-49e2-a750-849726b65205")
+		)
+		(pin "1"
+			(uuid "09a9cc4a-5e55-4505-ae20-0368963354f3")
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -12553,7 +13403,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 238.76 86.36 0)
+		(at 248.92 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12562,7 +13412,7 @@
 		(fields_autoplaced yes)
 		(uuid "fcf75e17-e95d-4373-8b9a-e16f1289e353")
 		(property "Reference" "#PWR017"
-			(at 238.76 92.71 0)
+			(at 248.92 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12571,7 +13421,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 238.76 91.44 0)
+			(at 248.92 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12579,7 +13429,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 238.76 86.36 0)
+			(at 248.92 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12588,7 +13438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 86.36 0)
+			(at 248.92 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12597,7 +13447,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 238.76 86.36 0)
+			(at 248.92 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12619,7 +13469,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Diode_AKL:1N4001")
-		(at 252.73 50.8 270)
+		(at 262.89 49.53 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12628,7 +13478,7 @@
 		(fields_autoplaced yes)
 		(uuid "fdf9c6dd-59dc-4815-80d8-2695e5ba914e")
 		(property "Reference" "D4"
-			(at 255.27 49.5299 90)
+			(at 265.43 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12637,7 +13487,7 @@
 			)
 		)
 		(property "Value" "1N4001"
-			(at 255.27 52.0699 90)
+			(at 265.43 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12646,7 +13496,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Diode_SMD_Handsoldering_AKL:D_SOD-323_BigPads"
-			(at 252.73 50.8 0)
+			(at 262.89 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12655,7 +13505,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tme.eu/Document/5f8ffc5ac30fc86bac97d66040bf5502/1n400x.pdf"
-			(at 252.73 50.8 0)
+			(at 262.89 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12664,7 +13514,7 @@
 			)
 		)
 		(property "Description" "DO-41 Diode, Rectifier, 50V 1A, Alternate KiCad Library"
-			(at 252.73 50.8 0)
+			(at 262.89 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12682,6 +13532,76 @@
 			(project "NIMH-battery-charger"
 				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 167.64 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fea1bca1-1b4d-4aeb-ac9b-38f64416a84b")
+		(property "Reference" "D6"
+			(at 171.45 38.4174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 171.45 40.9574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+			(at 167.64 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 167.64 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d6b8190c-c187-4c21-ac65-209ec5f8f7f8")
+		)
+		(pin "1"
+			(uuid "abaad21b-db16-4522-8029-a5f8c87ed993")
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "D6")
 					(unit 1)
 				)
 			)

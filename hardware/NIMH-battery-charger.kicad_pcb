@@ -108,6 +108,11 @@
 	(net 26 "unconnected-(J7-CC2-PadB5)")
 	(net 27 "unconnected-(J7-CC1-PadA5)")
 	(net 28 "Net-(J7-SHIELD)")
+	(net 29 "Net-(D5-A)")
+	(net 30 "Net-(D6-A)")
+	(net 31 "Net-(D7-A)")
+	(net 32 "Net-(D8-A)")
+	(net 33 "Net-(D10-A)")
 	(footprint "Special_Local:UM-3X1-AA"
 		(layer "F.Cu")
 		(uuid "646fc277-647b-46e8-89dd-28a8720f2975")
@@ -1929,6 +1934,295 @@
 			(uuid "5251cabe-9840-4699-a00a-0cca754295ba")
 		)
 	)
+	(footprint "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+		(layer "B.Cu")
+		(uuid "0b29aa03-82db-4eb3-b399-4e0ab8ed7e68")
+		(at 157.669668 89.3 180)
+		(descr "LED SMD 1206 (3216 Metric), reverse mount, square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "diode reverse")
+		(property "Reference" "D7"
+			(at 0 2.545 0)
+			(layer "B.SilkS")
+			(uuid "b9072b30-b5fb-44bd-b004-c51054f6beb6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.145 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3a409d24-f5f6-41e9-acab-9da43effb7e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "716fcde0-6d8a-429b-a101-f0c894dc484b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4e713ab9-c055-4f2e-978e-8a93aa824e1c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e009ea33-17cf-4f3d-8eb9-104d40b7f2b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(path "/b846a9cb-8982-44ce-b1e1-dae797d00f59")
+		(sheetname "Root")
+		(sheetfile "NIMH-battery-charger.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.9 1.9)
+			(end -0.9 1.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill solid)
+			(layer "B.SilkS")
+			(uuid "1c4f57af-8ec0-43cb-b2ed-20ef2daa8472")
+		)
+		(fp_rect
+			(start -1.9 -1.5)
+			(end -0.9 -1.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill solid)
+			(layer "B.SilkS")
+			(uuid "076b9022-67ef-41da-b54e-0e6313b96577")
+		)
+		(fp_rect
+			(start -2.3 1.5)
+			(end 2.3 -1.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "0c818dec-901f-4d5f-972f-4b562747dffe")
+		)
+		(fp_line
+			(start 2.28 1.46)
+			(end -2.28 1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "c4da73c8-49bb-446e-913d-54853f80991a")
+		)
+		(fp_line
+			(start 2.28 -1.46)
+			(end 2.28 1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "657734e8-7b3b-4337-8ade-6e626fc0539f")
+		)
+		(fp_line
+			(start -2.28 1.46)
+			(end -2.28 -1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "b323bee8-afc1-4efa-b17a-115e1dac5072")
+		)
+		(fp_line
+			(start -2.28 -1.46)
+			(end 2.28 -1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "97014098-9c6e-40ff-9035-8bb1ca273ed2")
+		)
+		(fp_line
+			(start 1.6 0.8)
+			(end 1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "91792c34-fd78-4928-a4d7-e7c560c26683")
+		)
+		(fp_line
+			(start 1.6 -0.8)
+			(end -1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "ee5c28fe-c19b-40f2-abc8-90b440d45db1")
+		)
+		(fp_line
+			(start 1.3 0)
+			(end -1.3 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "387b63c1-dec5-414e-9d4b-5c23522f0dfc")
+		)
+		(fp_line
+			(start 0.6 0.6)
+			(end -0.6 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "0436ff3d-8e3e-4bd6-8115-2e353b20e400")
+		)
+		(fp_line
+			(start 0.6 -0.6)
+			(end 0.6 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "43024c33-c0e8-491e-8487-94285ab34478")
+		)
+		(fp_line
+			(start -0.6 0)
+			(end 0.6 -0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "37a03a52-b702-4a0d-8964-fae27ae693ed")
+		)
+		(fp_line
+			(start -0.6 -0.6)
+			(end -0.6 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "419f1691-5cb0-47d3-923d-4393c9333f44")
+		)
+		(fp_line
+			(start -1.6 0.8)
+			(end 1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "f342e7a8-edba-4767-af5d-61350b1223fe")
+		)
+		(fp_line
+			(start -1.6 -0.8)
+			(end -1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "6a885a64-df76-4156-b7c3-7b7a1bccb1c1")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 1.4 0)
+			(layer "B.Fab")
+			(uuid "fa7efc71-2393-4d16-8870-f78c609a67d2")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "" np_thru_hole oval
+			(at 0 0 180)
+			(size 1.8 2.4)
+			(drill oval 1.8 2.4)
+			(layers "*.Cu" "*.Mask")
+			(uuid "94c944b4-65f1-4465-98f9-acc9bb528884")
+		)
+		(pad "1" smd roundrect
+			(at -1.55 0 180)
+			(size 0.95 1.75)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.2)
+			(net 23 "/LED3")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "20012727-d94b-4da6-ba66-8d5ae767e44d")
+		)
+		(pad "2" smd roundrect
+			(at 1.55 0 180)
+			(size 0.95 1.75)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.2)
+			(net 31 "Net-(D7-A)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "27f3d19f-e8ce-4883-8670-da9dd2c3bd92")
+		)
+		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric_ReverseMount.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "B.Cu")
 		(uuid "12d30319-5cf7-4935-86de-ac9485f09a92")
@@ -2048,6 +2342,242 @@
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "f0665344-d816-4952-aecf-37452f325edb")
+		)
+	)
+	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(layer "B.Cu")
+		(uuid "1be9f51e-a773-4dde-8ed4-9caf8905164e")
+		(at 152.408168 84.5625 180)
+		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
+		(tags "resistor handsolder")
+		(property "Reference" "R8"
+			(at 0 1.7145 0)
+			(layer "B.SilkS")
+			(uuid "9011883d-5f35-4a1e-b279-f8d8da00fdf4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "220R"
+			(at 0 -1.65 0)
+			(layer "B.Fab")
+			(uuid "a818c999-9f5a-4c81-99bd-4fb9879f60c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e85e28da-2047-495b-af01-cec71a2b5be6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "be6999ab-57c2-4bd0-ab85-e96942be4e3a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5885dff6-2029-4e71-ab84-2c2c586b91f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/ca211297-4931-4691-a196-85a1c0fc7cd8")
+		(sheetname "Root")
+		(sheetfile "NIMH-battery-charger.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 1.8415 0.9525)
+			(end 1.8415 -0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "3ee85f08-863a-48ed-be17-6951504c9722")
+		)
+		(fp_line
+			(start 1.8415 -0.9525)
+			(end -1.8415 -0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "90061297-b586-44ec-92d0-4a9333b154b5")
+		)
+		(fp_line
+			(start -1.8415 0.9525)
+			(end 1.8415 0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "3cff12df-9b6a-4a97-8e87-0e1b33c18f4b")
+		)
+		(fp_line
+			(start -1.8415 -0.9525)
+			(end -1.8415 0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "1652a582-ed24-4c16-a9fa-8d25176d9778")
+		)
+		(fp_line
+			(start 1.85 0.95)
+			(end -1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "18133064-e672-4ce9-830c-618c0ad7fc54")
+		)
+		(fp_line
+			(start 1.85 -0.95)
+			(end 1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "c5e07a4a-9b8e-4f62-aa04-0b66d9c7415e")
+		)
+		(fp_line
+			(start -1.85 0.95)
+			(end -1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "babf7794-2f31-4f11-abb6-013168399482")
+		)
+		(fp_line
+			(start -1.85 -0.95)
+			(end 1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "4ef623e7-a539-48f2-a306-f495d6851a9a")
+		)
+		(fp_line
+			(start 1 0.625)
+			(end -1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "e87f7baa-25af-47f2-9b21-e252b3afb9b8")
+		)
+		(fp_line
+			(start 1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "4f191235-9224-4104-bd9b-4c6ad990e622")
+		)
+		(fp_line
+			(start -1 0.625)
+			(end -1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "0091d093-3089-4087-a25c-7860df21451d")
+		)
+		(fp_line
+			(start -1 -0.625)
+			(end 1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "27dac138-098d-457c-ad51-838e38a62333")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(uuid "d54d4cbb-9a15-4b8a-adf4-7720fb462715")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1 0 180)
+			(size 1.2 1.4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.208333)
+			(net 3 "+5V")
+			(pintype "passive")
+			(uuid "d79cb4ef-2650-451f-9eeb-c8190cb8744c")
+		)
+		(pad "2" smd roundrect
+			(at 1 0 180)
+			(size 1.2 1.4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.208333)
+			(net 31 "Net-(D7-A)")
+			(pintype "passive")
+			(uuid "72e2917f-74b6-46cc-a8db-2e4eb618124c")
+		)
+		(model "${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
 		)
 	)
 	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -2273,6 +2803,242 @@
 			(net 10 "/ADC4")
 			(pintype "passive")
 			(uuid "ca665968-747e-4854-b7c4-9f2784ae38be")
+		)
+		(model "${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(layer "B.Cu")
+		(uuid "20a169d0-b6b5-42fc-9109-b1c37175e0d4")
+		(at 152.408168 78.5125 180)
+		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
+		(tags "resistor handsolder")
+		(property "Reference" "R6"
+			(at 0 1.7145 0)
+			(layer "B.SilkS")
+			(uuid "4fc5ff3a-41f8-4ef0-bc1a-e1df15c6d3cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "220R"
+			(at 0 -1.65 0)
+			(layer "B.Fab")
+			(uuid "73e0c838-2394-457c-ba2e-69e89198ab2f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3490c2de-54d2-4419-8da6-32b17a6f094b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5a0dfbf7-d542-4aad-93a1-1377d49eec55")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3c1b7828-1a50-45c0-b2e4-577946d7191a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/aa8cb947-2bbb-4920-90a6-118a476e134a")
+		(sheetname "Root")
+		(sheetfile "NIMH-battery-charger.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 1.8415 0.9525)
+			(end 1.8415 -0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "4e1a2609-5df4-4445-92a8-28458f1eb479")
+		)
+		(fp_line
+			(start 1.8415 -0.9525)
+			(end -1.8415 -0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "347b1eb0-346e-42fb-9fd8-5294b3aed1ae")
+		)
+		(fp_line
+			(start -1.8415 0.9525)
+			(end 1.8415 0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "ecad966e-8fc7-4bf9-ae53-2a4d979dd7cb")
+		)
+		(fp_line
+			(start -1.8415 -0.9525)
+			(end -1.8415 0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "1b075a79-110d-44fa-895d-bf3af1c7b54e")
+		)
+		(fp_line
+			(start 1.85 0.95)
+			(end -1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "3dcaa8b3-a62a-434d-91e9-2ab74ab21476")
+		)
+		(fp_line
+			(start 1.85 -0.95)
+			(end 1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "b417d5eb-9179-49db-9844-d45f2b9cbdb5")
+		)
+		(fp_line
+			(start -1.85 0.95)
+			(end -1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "f019358d-7b4f-49d1-8f59-37cfcda017ea")
+		)
+		(fp_line
+			(start -1.85 -0.95)
+			(end 1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "fd9cc0b3-d048-4b5b-a205-40c237330db5")
+		)
+		(fp_line
+			(start 1 0.625)
+			(end -1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "657e4007-210f-4d47-ab70-c08252ce5855")
+		)
+		(fp_line
+			(start 1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "4c3ae16f-ac56-417e-aa90-1b5315d86982")
+		)
+		(fp_line
+			(start -1 0.625)
+			(end -1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "b0f3336b-bddd-4514-8f5c-efbdec326040")
+		)
+		(fp_line
+			(start -1 -0.625)
+			(end 1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "3b9079c7-e9c6-43a2-a0f1-db8f42dae388")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(uuid "05e12732-cec7-43ad-a2de-d76279b9cc93")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1 0 180)
+			(size 1.2 1.4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.208333)
+			(net 3 "+5V")
+			(pintype "passive")
+			(uuid "3a256438-4f5d-43cc-a3a4-1a4f4d63a7ca")
+		)
+		(pad "2" smd roundrect
+			(at 1 0 180)
+			(size 1.2 1.4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.208333)
+			(net 29 "Net-(D5-A)")
+			(pintype "passive")
+			(uuid "37c9e075-3dc3-428a-87de-6de8eeb1c46c")
 		)
 		(model "${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
 			(offset
@@ -3080,6 +3846,295 @@
 			(uuid "c4f825a7-5824-4bb2-8165-0482131dc117")
 		)
 	)
+	(footprint "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+		(layer "B.Cu")
+		(uuid "329c4f97-d2f5-470d-a8b0-bbe75154e0f8")
+		(at 129.45 50.1 90)
+		(descr "LED SMD 1206 (3216 Metric), reverse mount, square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "diode reverse")
+		(property "Reference" "D6"
+			(at 0 2.545 90)
+			(layer "B.SilkS")
+			(uuid "5249c398-2443-4a2e-b36f-d7e4a4c0207b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.145 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8a62b381-0ead-405c-883d-47d49103e1e2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "56ba6280-b5e8-460d-8288-5050c4065957")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c82e5103-367c-4a28-8b4b-444483dad2e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "acdab1dd-186e-4a4c-964c-361accdc9309")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(path "/fea1bca1-1b4d-4aeb-ac9b-38f64416a84b")
+		(sheetname "Root")
+		(sheetfile "NIMH-battery-charger.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.9 -1.5)
+			(end -0.9 -1.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill solid)
+			(layer "B.SilkS")
+			(uuid "58208874-4687-49bc-b0d2-5be952b14267")
+		)
+		(fp_rect
+			(start -2.3 1.5)
+			(end 2.3 -1.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "29aa7168-64f6-43df-ac75-412352d8bf33")
+		)
+		(fp_rect
+			(start -1.9 1.9)
+			(end -0.9 1.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill solid)
+			(layer "B.SilkS")
+			(uuid "b1731645-4e05-46b6-9696-1c0fe2ff47f8")
+		)
+		(fp_line
+			(start 2.28 -1.46)
+			(end 2.28 1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "5b56ac6e-a0e4-4e7a-93a2-3699a6d96a91")
+		)
+		(fp_line
+			(start -2.28 -1.46)
+			(end 2.28 -1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "aa8d97f6-9198-4eed-b275-62f9122c229d")
+		)
+		(fp_line
+			(start 2.28 1.46)
+			(end -2.28 1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "d21c0ec7-2dca-47ef-9b11-a37424ac49f1")
+		)
+		(fp_line
+			(start -2.28 1.46)
+			(end -2.28 -1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "0d35846e-9e05-43fb-a444-a40e7c4c2169")
+		)
+		(fp_line
+			(start 1.6 -0.8)
+			(end -1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "86438f80-4cab-4b45-b4c3-5324b7c47895")
+		)
+		(fp_line
+			(start -1.6 -0.8)
+			(end -1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "9533999d-79fa-4320-82b6-2a8094ae228d")
+		)
+		(fp_line
+			(start 0.6 -0.6)
+			(end 0.6 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "8a362103-607d-44c3-8565-59515ff823d8")
+		)
+		(fp_line
+			(start -0.6 -0.6)
+			(end -0.6 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "17d89453-f862-427a-9f65-9d190f40d3bd")
+		)
+		(fp_line
+			(start 1.3 0)
+			(end -1.3 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "bef227d1-ef6f-4109-88b1-495ea50aca10")
+		)
+		(fp_line
+			(start -0.6 0)
+			(end 0.6 -0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "6f13c016-d35a-4464-b86a-33cd36e5fd4a")
+		)
+		(fp_line
+			(start 0.6 0.6)
+			(end -0.6 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "d78221b8-0f47-403f-95b4-35e6ad336f1d")
+		)
+		(fp_line
+			(start 1.6 0.8)
+			(end 1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "da761704-497e-47d4-86ed-c90bf8cf4f84")
+		)
+		(fp_line
+			(start -1.6 0.8)
+			(end 1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "4fe5dbac-bcf1-4287-a0c7-9cc026e02c9d")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 1.4 90)
+			(layer "B.Fab")
+			(uuid "a14ff8db-0b7d-4c11-bd28-463a0dd1dc0a")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "" np_thru_hole oval
+			(at 0 0 90)
+			(size 1.8 2.4)
+			(drill oval 1.8 2.4)
+			(layers "*.Cu" "*.Mask")
+			(uuid "63e16098-14f7-4b3e-aca7-95c546956b97")
+		)
+		(pad "1" smd roundrect
+			(at -1.55 0 90)
+			(size 0.95 1.75)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.2)
+			(net 22 "/LED2")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "41083c7f-0e61-44a6-80c8-7fc592984dd0")
+		)
+		(pad "2" smd roundrect
+			(at 1.55 0 90)
+			(size 0.95 1.75)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.2)
+			(net 30 "Net-(D6-A)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "6704e18b-947a-4f23-bb84-551befdf6000")
+		)
+		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric_ReverseMount.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Special_Local:PAD"
 		(layer "B.Cu")
 		(uuid "33f68570-ab23-404b-8d4f-f2490fe1f97e")
@@ -3480,6 +4535,295 @@
 			(uuid "dd886412-526c-4eda-aa59-0deba0f110aa")
 		)
 	)
+	(footprint "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+		(layer "B.Cu")
+		(uuid "4d4e8aa0-624d-4ec4-8bec-ad35a2070303")
+		(at 113.3 50.15 90)
+		(descr "LED SMD 1206 (3216 Metric), reverse mount, square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "diode reverse")
+		(property "Reference" "D5"
+			(at 0 2.545 90)
+			(layer "B.SilkS")
+			(uuid "258f6043-3ef7-4f53-855c-73483ebc4b69")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.145 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "689b8587-9f52-439e-9510-9b82ee757be9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f017b251-f819-46c1-a4d5-5986c7ad65c0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7f53487a-b1bd-4c8a-9011-9cc6e704935f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "99264cf6-ecb9-4321-815b-8c7937b77966")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(path "/5e0b970c-4695-4e72-8e6b-2ca3b54183e7")
+		(sheetname "Root")
+		(sheetfile "NIMH-battery-charger.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.9 -1.5)
+			(end -0.9 -1.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill solid)
+			(layer "B.SilkS")
+			(uuid "bde68469-e29a-4c37-8303-6003b9f2c9ae")
+		)
+		(fp_rect
+			(start -2.3 1.5)
+			(end 2.3 -1.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "8cd78674-4a7b-4d37-8f96-e0483d8d27a4")
+		)
+		(fp_rect
+			(start -1.9 1.9)
+			(end -0.9 1.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill solid)
+			(layer "B.SilkS")
+			(uuid "6a187530-44b4-49e6-b310-70551cb1caeb")
+		)
+		(fp_line
+			(start 2.28 -1.46)
+			(end 2.28 1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "444e3827-a4f5-433b-b758-e255d4c601c2")
+		)
+		(fp_line
+			(start -2.28 -1.46)
+			(end 2.28 -1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "777da97e-eb02-4be3-929c-8370081b665c")
+		)
+		(fp_line
+			(start 2.28 1.46)
+			(end -2.28 1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "39dd947c-743e-4728-80f8-1d8a11500c19")
+		)
+		(fp_line
+			(start -2.28 1.46)
+			(end -2.28 -1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "2fb9876a-a1c2-43cf-beb0-25dd33d05d15")
+		)
+		(fp_line
+			(start 1.6 -0.8)
+			(end -1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "4a42e69c-8342-44e1-969c-da500044fca5")
+		)
+		(fp_line
+			(start -1.6 -0.8)
+			(end -1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "f4abddbe-9706-4eaf-ac69-66a42ebc7e2c")
+		)
+		(fp_line
+			(start 0.6 -0.6)
+			(end 0.6 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "b91ac30a-e5f2-45ce-a7d3-f1c6b69a937c")
+		)
+		(fp_line
+			(start -0.6 -0.6)
+			(end -0.6 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "fa7b8cd0-15b8-4b89-b85c-32dc26cc7c9f")
+		)
+		(fp_line
+			(start 1.3 0)
+			(end -1.3 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "0c0f9c40-493f-4cdc-8007-81f883f85221")
+		)
+		(fp_line
+			(start -0.6 0)
+			(end 0.6 -0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "d0b97d1d-b375-4414-af22-9cd04d72d357")
+		)
+		(fp_line
+			(start 0.6 0.6)
+			(end -0.6 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "c220406a-1ad2-40a1-829e-cbd4184be1a5")
+		)
+		(fp_line
+			(start 1.6 0.8)
+			(end 1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "9124a602-c47a-4616-9d5b-695bae828b97")
+		)
+		(fp_line
+			(start -1.6 0.8)
+			(end 1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "0ead3c87-0c2c-4893-8175-f469b328c23a")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 1.4 90)
+			(layer "B.Fab")
+			(uuid "9c9b4702-5fc1-4452-bb43-5a8528d55b04")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "" np_thru_hole oval
+			(at 0 0 90)
+			(size 1.8 2.4)
+			(drill oval 1.8 2.4)
+			(layers "*.Cu" "*.Mask")
+			(uuid "11253c87-b1fc-43f4-bb66-dc6b6355f519")
+		)
+		(pad "1" smd roundrect
+			(at -1.55 0 90)
+			(size 0.95 1.75)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.2)
+			(net 25 "/LED1")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "133c11d6-f5c5-47e8-9f2d-dae3e61d5cc4")
+		)
+		(pad "2" smd roundrect
+			(at 1.55 0 90)
+			(size 0.95 1.75)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.2)
+			(net 29 "Net-(D5-A)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "1b3f703a-030b-4d0e-b10d-3b7bad9d8976")
+		)
+		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric_ReverseMount.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "PCM_Diode_SMD_Handsoldering_AKL:D_SOD-323_BigPads"
 		(layer "B.Cu")
 		(uuid "4f3658a0-3981-4ee6-a57a-7992e39c0e32")
@@ -3825,6 +5169,295 @@
 			(uuid "b55ab67c-a97b-4f61-9b0d-0aa13dc7bdc1")
 		)
 		(model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+		(layer "B.Cu")
+		(uuid "537718fc-dc1c-4840-a032-c76d39a57dd6")
+		(at 157.669668 94.22 180)
+		(descr "LED SMD 1206 (3216 Metric), reverse mount, square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "diode reverse")
+		(property "Reference" "D8"
+			(at 0 2.545 0)
+			(layer "B.SilkS")
+			(uuid "a83bcd89-8fee-4c8c-a566-ce0b7523474c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.145 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b7268123-8170-4c96-ac96-7ce814c231bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0f4b22fa-9e62-4995-81ce-ba3bf59a81d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "46c53a6f-9ebe-402b-baaa-bba2665aa2ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f8271c75-5fcb-4d35-98f0-62eee36a4d9a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(path "/edebfc97-0c12-4559-99dd-30d99556c379")
+		(sheetname "Root")
+		(sheetfile "NIMH-battery-charger.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.9 1.9)
+			(end -0.9 1.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill solid)
+			(layer "B.SilkS")
+			(uuid "6ded8094-7833-4d43-9453-a117a1a7a85d")
+		)
+		(fp_rect
+			(start -1.9 -1.5)
+			(end -0.9 -1.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill solid)
+			(layer "B.SilkS")
+			(uuid "4f47d7be-d66f-49b3-b0aa-143a05d167ff")
+		)
+		(fp_rect
+			(start -2.3 1.5)
+			(end 2.3 -1.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "d8148244-7dfa-4018-9792-1860bf2810be")
+		)
+		(fp_line
+			(start 2.28 1.46)
+			(end -2.28 1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "06a737a1-3345-4aaa-b0b1-4938eb8192eb")
+		)
+		(fp_line
+			(start 2.28 -1.46)
+			(end 2.28 1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "651bc3c0-ffea-43d2-965a-a84552016ff7")
+		)
+		(fp_line
+			(start -2.28 1.46)
+			(end -2.28 -1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "07456cfc-d2b6-4b2f-bbd6-1ab5d34af3a5")
+		)
+		(fp_line
+			(start -2.28 -1.46)
+			(end 2.28 -1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "051be015-165b-4416-a8b8-be6cc1c4c165")
+		)
+		(fp_line
+			(start 1.6 0.8)
+			(end 1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "5326ecaf-8cc9-4696-8457-896ccdb1d66b")
+		)
+		(fp_line
+			(start 1.6 -0.8)
+			(end -1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "50bf23e2-64a6-47c6-b4db-ba01c1a9146b")
+		)
+		(fp_line
+			(start 1.3 0)
+			(end -1.3 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "1006a832-77d8-4e75-84e6-71b6676ce049")
+		)
+		(fp_line
+			(start 0.6 0.6)
+			(end -0.6 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "723c6130-e17c-4a0b-8f03-1bb607e31164")
+		)
+		(fp_line
+			(start 0.6 -0.6)
+			(end 0.6 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "e814f677-a118-4f8a-a81c-3c45e976dba6")
+		)
+		(fp_line
+			(start -0.6 0)
+			(end 0.6 -0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "74c133fa-a0a7-48b2-aaf6-53d0347ee567")
+		)
+		(fp_line
+			(start -0.6 -0.6)
+			(end -0.6 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "3255fca9-d45a-4d1e-a2d6-777efdb6e92e")
+		)
+		(fp_line
+			(start -1.6 0.8)
+			(end 1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "c4734b40-3ac7-4f36-9755-eadeed36dd73")
+		)
+		(fp_line
+			(start -1.6 -0.8)
+			(end -1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "1eeee4b7-bce8-4915-b090-ab92cea84719")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 1.4 0)
+			(layer "B.Fab")
+			(uuid "f93516c9-d25c-45d8-bb80-1a0e3893dc08")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "" np_thru_hole oval
+			(at 0 0 180)
+			(size 1.8 2.4)
+			(drill oval 1.8 2.4)
+			(layers "*.Cu" "*.Mask")
+			(uuid "0d70e0a6-37a7-4406-a6b7-e6292ec29c55")
+		)
+		(pad "1" smd roundrect
+			(at -1.55 0 180)
+			(size 0.95 1.75)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.2)
+			(net 21 "/LED4")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "c023eb52-3422-450d-a94b-d55ae89b0346")
+		)
+		(pad "2" smd roundrect
+			(at 1.55 0 180)
+			(size 0.95 1.75)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.2)
+			(net 32 "Net-(D8-A)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "869adeb7-6606-4f69-9421-f3a27ca4c2ac")
+		)
+		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric_ReverseMount.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5270,6 +6903,531 @@
 			(uuid "29c24755-e0cc-4522-81e5-97d770116688")
 		)
 	)
+	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(layer "B.Cu")
+		(uuid "96a2c4bd-74fb-4a41-bea1-724219a53ef4")
+		(at 152.408168 87.5875 180)
+		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
+		(tags "resistor handsolder")
+		(property "Reference" "R9"
+			(at 0 1.7145 0)
+			(layer "B.SilkS")
+			(uuid "a50027b0-39af-411a-8a44-1ef73904773c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "220R"
+			(at 0 -1.65 0)
+			(layer "B.Fab")
+			(uuid "7cc26548-f763-42f5-8ed3-8f7ffd9507cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5ccbc928-118a-4a8f-a1f4-c90990af6bd5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "142f5cf0-eaf3-4d3a-bbdc-c0943cfc4403")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "80383e3c-de7e-4af2-8738-c38beb5db768")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/3d94ecd2-9494-4369-963b-f4e7c2798ab5")
+		(sheetname "Root")
+		(sheetfile "NIMH-battery-charger.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 1.8415 0.9525)
+			(end 1.8415 -0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "660b427c-a2e7-4857-8984-82ac0ef3a925")
+		)
+		(fp_line
+			(start 1.8415 -0.9525)
+			(end -1.8415 -0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "6359e1dc-f71d-4622-ac82-71141d1c5c7d")
+		)
+		(fp_line
+			(start -1.8415 0.9525)
+			(end 1.8415 0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "e6699ff7-46bc-46fd-bb68-f6cef9f2a9ab")
+		)
+		(fp_line
+			(start -1.8415 -0.9525)
+			(end -1.8415 0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "5324250c-e0dd-45de-9005-7d42474aee25")
+		)
+		(fp_line
+			(start 1.85 0.95)
+			(end -1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "2e3aaad6-ec25-4a4e-aeb8-7678e8d22daf")
+		)
+		(fp_line
+			(start 1.85 -0.95)
+			(end 1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "5cca65b5-d9d9-4e27-9142-f91a47cfc6b6")
+		)
+		(fp_line
+			(start -1.85 0.95)
+			(end -1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "be3d8ae7-5f55-44a6-8b95-9c6fe56e9d1d")
+		)
+		(fp_line
+			(start -1.85 -0.95)
+			(end 1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "6cc94608-d33d-4115-9321-0ef3df568f8a")
+		)
+		(fp_line
+			(start 1 0.625)
+			(end -1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "9c01dd35-8c5c-4735-94af-f4d62407f141")
+		)
+		(fp_line
+			(start 1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "817452ec-ccb4-4314-b9aa-901640b717cf")
+		)
+		(fp_line
+			(start -1 0.625)
+			(end -1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "75bdebc8-45fb-41d3-8334-a464b6d1b9a0")
+		)
+		(fp_line
+			(start -1 -0.625)
+			(end 1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "84c02574-87ec-4dc7-91c7-a75b5ab9f40b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(uuid "298f11f5-7886-4e9d-a627-e344958b43ec")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1 0 180)
+			(size 1.2 1.4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.208333)
+			(net 3 "+5V")
+			(pintype "passive")
+			(uuid "fac07749-55c2-4068-b2a9-be5514b2270a")
+		)
+		(pad "2" smd roundrect
+			(at 1 0 180)
+			(size 1.2 1.4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.208333)
+			(net 32 "Net-(D8-A)")
+			(pintype "passive")
+			(uuid "2397d232-e76f-4806-85c3-cf88c9a381d6")
+		)
+		(model "${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+		(layer "B.Cu")
+		(uuid "989acfbc-1c47-48f2-9760-89b34a2ade60")
+		(at 157.669668 99.14 180)
+		(descr "LED SMD 1206 (3216 Metric), reverse mount, square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "diode reverse")
+		(property "Reference" "D10"
+			(at 0 2.545 0)
+			(layer "B.SilkS")
+			(uuid "e07865e9-caa1-4dcb-960e-1de205b648ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.145 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5146b20d-c224-4d4f-a066-a0af5b101a14")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "PCM_LED_SMD_AKL:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8cc1a402-331e-47a2-b8b1-d4886d075cc9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3a7b67a1-aa02-40d0-a630-4fdc982f2482")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "de58810c-61f2-4540-900c-f59b4ee02d84")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(path "/1876b5eb-5524-4d01-9b3b-cde35e03dddc")
+		(sheetname "Root")
+		(sheetfile "NIMH-battery-charger.kicad_sch")
+		(attr smd)
+		(fp_rect
+			(start -1.9 1.9)
+			(end -0.9 1.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill solid)
+			(layer "B.SilkS")
+			(uuid "1a80457e-f8fc-4362-b8fe-0cb351d60552")
+		)
+		(fp_rect
+			(start -1.9 -1.5)
+			(end -0.9 -1.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill solid)
+			(layer "B.SilkS")
+			(uuid "687c9aec-43f8-416b-b658-ccc0779d1b38")
+		)
+		(fp_rect
+			(start -2.3 1.5)
+			(end 2.3 -1.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "6479c678-28d3-48c5-9122-2e6bd3c7692a")
+		)
+		(fp_line
+			(start 2.28 1.46)
+			(end -2.28 1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "ec7c4a10-afef-4f3a-bdb5-130fc76975e3")
+		)
+		(fp_line
+			(start 2.28 -1.46)
+			(end 2.28 1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "9275fa31-72f5-4a75-8def-32ebf46ea496")
+		)
+		(fp_line
+			(start -2.28 1.46)
+			(end -2.28 -1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "e27d9160-3a57-4d12-9466-ee290133651e")
+		)
+		(fp_line
+			(start -2.28 -1.46)
+			(end 2.28 -1.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "016b31ed-b9cc-4094-93ea-0838a92f7abc")
+		)
+		(fp_line
+			(start 1.6 0.8)
+			(end 1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "1a1c8651-e56b-4058-98b2-c9e93e573e70")
+		)
+		(fp_line
+			(start 1.6 -0.8)
+			(end -1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "14fa7194-efe7-4c2a-889a-07030e30f121")
+		)
+		(fp_line
+			(start 1.3 0)
+			(end -1.3 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "76c6008e-ff84-4dea-8e25-3a6c73a3d3c7")
+		)
+		(fp_line
+			(start 0.6 0.6)
+			(end -0.6 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "21e96d10-4c27-42d0-92ea-d5ee22dde891")
+		)
+		(fp_line
+			(start 0.6 -0.6)
+			(end 0.6 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "5db8079f-a20e-4ca8-8060-b7444f195179")
+		)
+		(fp_line
+			(start -0.6 0)
+			(end 0.6 -0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "9c6ea71a-6b97-467a-ac4b-8b4506335b4b")
+		)
+		(fp_line
+			(start -0.6 -0.6)
+			(end -0.6 0.6)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "494af5fa-db06-4225-aacc-c950e1290479")
+		)
+		(fp_line
+			(start -1.6 0.8)
+			(end 1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "f0404f9f-1848-4b44-a643-b5b8bf4a92f0")
+		)
+		(fp_line
+			(start -1.6 -0.8)
+			(end -1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "0f1deaba-5c71-4a6c-81b2-20f099a8545c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 1.4 0)
+			(layer "B.Fab")
+			(uuid "e978f958-1d99-48de-8c97-af8d77a0f399")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "" np_thru_hole oval
+			(at 0 0 180)
+			(size 1.8 2.4)
+			(drill oval 1.8 2.4)
+			(layers "*.Cu" "*.Mask")
+			(uuid "298084b7-ea13-445c-ace0-4f52101237c0")
+		)
+		(pad "1" smd roundrect
+			(at -1.55 0 180)
+			(size 0.95 1.75)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.2)
+			(net 20 "/LED0")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "ab88aa41-d766-4978-8452-90088f976157")
+		)
+		(pad "2" smd roundrect
+			(at 1.55 0 180)
+			(size 0.95 1.75)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.2)
+			(net 33 "Net-(D10-A)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "e4b3548b-d305-4e94-801d-97595ae85d7f")
+		)
+		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric_ReverseMount.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "PCM_Diode_SMD_Handsoldering_AKL:D_SOD-323_BigPads"
 		(layer "B.Cu")
 		(uuid "a6fa5719-b24a-4051-be32-f831bf67474b")
@@ -5868,6 +8026,242 @@
 			(uuid "10997aa8-71d4-405c-b3c7-f61782ae0ead")
 		)
 	)
+	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(layer "B.Cu")
+		(uuid "be88a38c-ce9a-4368-aa11-e64855cbea1c")
+		(at 152.408168 81.5375 180)
+		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
+		(tags "resistor handsolder")
+		(property "Reference" "R7"
+			(at 0 1.7145 0)
+			(layer "B.SilkS")
+			(uuid "092b4771-99b2-48db-b470-b0569039c694")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "220R"
+			(at 0 -1.65 0)
+			(layer "B.Fab")
+			(uuid "474cc5f2-6d4b-4417-afa0-29592882a5a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "11c63fc7-d8c7-41e6-8858-51a5f9920787")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "24c7953b-dc56-4102-b868-b06751caaf7f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "99b46252-67f7-4b6b-8421-58213ed82d7e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/77993b01-8c55-4eab-86fe-3419e0937394")
+		(sheetname "Root")
+		(sheetfile "NIMH-battery-charger.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 1.8415 0.9525)
+			(end 1.8415 -0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "ed9a52b2-59d8-4bad-bfd5-7c20623b6880")
+		)
+		(fp_line
+			(start 1.8415 -0.9525)
+			(end -1.8415 -0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "2a979739-641c-4bcb-9e2d-9a4c7c214953")
+		)
+		(fp_line
+			(start -1.8415 0.9525)
+			(end 1.8415 0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "35901f9a-0922-48a8-86cd-8de8634d7226")
+		)
+		(fp_line
+			(start -1.8415 -0.9525)
+			(end -1.8415 0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a1267422-02c8-4045-819c-7b55dab1a38c")
+		)
+		(fp_line
+			(start 1.85 0.95)
+			(end -1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "24f0a4f4-073b-43c8-b240-64c587770943")
+		)
+		(fp_line
+			(start 1.85 -0.95)
+			(end 1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "85cf0672-4cef-46d5-87c4-9f3e1e2979f3")
+		)
+		(fp_line
+			(start -1.85 0.95)
+			(end -1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "6778d047-598c-43a6-98d2-835f63950907")
+		)
+		(fp_line
+			(start -1.85 -0.95)
+			(end 1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "29f774c0-080e-4a0b-b41b-b01a5b1bc03f")
+		)
+		(fp_line
+			(start 1 0.625)
+			(end -1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "78f64559-86f3-40bd-ac97-36b1c8aa3278")
+		)
+		(fp_line
+			(start 1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "cc1ca456-8996-41a2-8fb2-629312f36b94")
+		)
+		(fp_line
+			(start -1 0.625)
+			(end -1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "e0bb934c-fc97-4ec3-a990-711fb22e2f2c")
+		)
+		(fp_line
+			(start -1 -0.625)
+			(end 1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "04e70d2f-45bc-4e2c-baad-8f697e11f155")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(uuid "16292f01-f3bc-4356-a5ac-ab17d558758c")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1 0 180)
+			(size 1.2 1.4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.208333)
+			(net 3 "+5V")
+			(pintype "passive")
+			(uuid "5caa7b88-c1c6-495f-87b6-51f45934a100")
+		)
+		(pad "2" smd roundrect
+			(at 1 0 180)
+			(size 1.2 1.4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.208333)
+			(net 30 "Net-(D6-A)")
+			(pintype "passive")
+			(uuid "821de9d2-f034-4fa5-8ab4-45f1da9a4704")
+		)
+		(model "${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "B.Cu")
 		(uuid "c208b27a-1f8c-4815-ad2f-a71d5b410717")
@@ -5987,6 +8381,242 @@
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "1ad06888-0f3e-4164-9bbf-ee1db7d9b04c")
+		)
+	)
+	(footprint "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(layer "B.Cu")
+		(uuid "cf69aef5-469b-425d-97ba-1c2a8a85e898")
+		(at 152.408168 90.6125 180)
+		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), Alternate KiCad Library")
+		(tags "resistor handsolder")
+		(property "Reference" "R10"
+			(at 0 1.7145 0)
+			(layer "B.SilkS")
+			(uuid "9edb1220-6354-416f-9ac6-5f8bd88b4cbf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "220R"
+			(at 0 -1.65 0)
+			(layer "B.Fab")
+			(uuid "841430a0-c15d-48b6-aed8-b8fdfe15228e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f5497e66-8588-4aec-8ea4-f71f35f5b0b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "907b1f08-053e-4cc3-8897-fac44cb09801")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "dfaa8d4b-b4b3-495f-8a44-460f7a9a5d27")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/97ae298c-82b3-4f12-a183-0955a493a158")
+		(sheetname "Root")
+		(sheetfile "NIMH-battery-charger.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 1.8415 0.9525)
+			(end 1.8415 -0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "78501e9e-e9f2-44f6-9cf3-741a5562e91b")
+		)
+		(fp_line
+			(start 1.8415 -0.9525)
+			(end -1.8415 -0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "177f4c76-6578-4670-8d45-8ba26cbb887b")
+		)
+		(fp_line
+			(start -1.8415 0.9525)
+			(end 1.8415 0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "42862ab7-55c2-46f1-8071-9204b886e64c")
+		)
+		(fp_line
+			(start -1.8415 -0.9525)
+			(end -1.8415 0.9525)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a9f7ad6a-e962-4c6d-9148-1a78305e7886")
+		)
+		(fp_line
+			(start 1.85 0.95)
+			(end -1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "cd9e13a7-4d52-4927-921e-1795eb1fbbae")
+		)
+		(fp_line
+			(start 1.85 -0.95)
+			(end 1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "61195c9b-4791-43c9-bb52-496538fdeba6")
+		)
+		(fp_line
+			(start -1.85 0.95)
+			(end -1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "cc0a96be-ce79-472c-8607-95365b76a468")
+		)
+		(fp_line
+			(start -1.85 -0.95)
+			(end 1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "862e1a93-0489-4555-9279-a70508855cae")
+		)
+		(fp_line
+			(start 1 0.625)
+			(end -1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "634b5859-a8cc-4128-980c-185ff9c0832d")
+		)
+		(fp_line
+			(start 1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "1a43d42e-8abf-4b5d-b5c5-6b4b29671d83")
+		)
+		(fp_line
+			(start -1 0.625)
+			(end -1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "e5ce2775-0b1c-4ece-bd2e-1e9407d8d59b")
+		)
+		(fp_line
+			(start -1 -0.625)
+			(end 1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "2d8f2170-3a4e-4374-9d86-056b79563252")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(uuid "6d0410a8-4da3-4903-96d3-fda0466d987f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1 0 180)
+			(size 1.2 1.4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.208333)
+			(net 3 "+5V")
+			(pintype "passive")
+			(uuid "d12cab9b-93ed-4602-9822-f32dd264d14b")
+		)
+		(pad "2" smd roundrect
+			(at 1 0 180)
+			(size 1.2 1.4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(roundrect_rratio 0.208333)
+			(net 33 "Net-(D10-A)")
+			(pintype "passive")
+			(uuid "ee0287e7-f9b6-497a-ae84-1cca37b3e3db")
+		)
+		(model "${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
 		)
 	)
 	(footprint "Connector_Harwin:Harwin_M20-89003xx_1x03_P2.54mm_Horizontal"
