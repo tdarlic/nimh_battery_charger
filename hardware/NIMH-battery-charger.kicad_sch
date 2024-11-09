@@ -1892,6 +1892,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "PCM_Diode_AKL:1N4001"
 			(pin_numbers hide)
 			(pin_names
@@ -2658,7 +2740,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 157.48) (xy 59.69 161.29)
+			(xy 68.58 133.35) (xy 68.58 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2838,7 +2920,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 152.4) (xy 55.88 152.4)
+			(xy 50.8 128.27) (xy 64.77 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3078,7 +3160,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 157.48) (xy 59.69 157.48)
+			(xy 50.8 133.35) (xy 68.58 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3198,7 +3280,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 154.94) (xy 59.69 149.86)
+			(xy 68.58 130.81) (xy 68.58 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3228,7 +3310,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 154.94) (xy 59.69 154.94)
+			(xy 50.8 130.81) (xy 68.58 130.81)
 		)
 		(stroke
 			(width 0)
@@ -9666,7 +9748,7 @@
 		(uuid "27144f71-cc11-4139-9003-7efa8f3589d0")
 	)
 	(label "ADC1"
-		(at 147.32 71.12 180)
+		(at 147.32 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9677,7 +9759,7 @@
 		(uuid "39c8dded-72f1-476b-a428-7fab09962a97")
 	)
 	(label "ADC4"
-		(at 147.32 90.17 180)
+		(at 147.32 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9688,7 +9770,7 @@
 		(uuid "4db4bb5f-43be-4ebc-956f-787a25eb9b39")
 	)
 	(label "ADC3"
-		(at 147.32 87.63 180)
+		(at 147.32 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9710,7 +9792,7 @@
 		(uuid "5ff6b579-7c97-4176-84e5-8924230a1d1e")
 	)
 	(label "ADC2"
-		(at 147.32 85.09 180)
+		(at 147.32 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9743,7 +9825,7 @@
 		(uuid "706c1f9d-e6d0-4502-8767-f08d2f2fbc1d")
 	)
 	(label "SWIO"
-		(at 55.88 152.4 180)
+		(at 64.77 128.27 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9912,6 +9994,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 36.83 184.15 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06faa072-c555-4f17-bb3e-b613efe32c7a")
+		(property "Reference" "H4"
+			(at 39.37 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 39.37 185.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopOnly"
+			(at 36.83 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 36.83 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Battery_Cell")
 		(at 262.89 80.01 0)
 		(unit 1)
@@ -10053,7 +10199,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 59.69 149.86 0)
+		(at 68.58 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10062,7 +10208,7 @@
 		(fields_autoplaced yes)
 		(uuid "252d065e-b11f-40a6-a9f3-47199c9e4a36")
 		(property "Reference" "#PWR020"
-			(at 59.69 153.67 0)
+			(at 68.58 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10071,7 +10217,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 59.69 144.78 0)
+			(at 68.58 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10079,7 +10225,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 149.86 0)
+			(at 68.58 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10088,7 +10234,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 149.86 0)
+			(at 68.58 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10097,7 +10243,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 59.69 149.86 0)
+			(at 68.58 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10319,7 +10465,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 161.29 0)
+		(at 68.58 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10328,7 +10474,7 @@
 		(fields_autoplaced yes)
 		(uuid "3ba5a4b4-ebd5-4b6a-9b86-1895eaa214dd")
 		(property "Reference" "#PWR021"
-			(at 59.69 167.64 0)
+			(at 68.58 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10337,7 +10483,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 166.37 0)
+			(at 68.58 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10345,7 +10491,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 161.29 0)
+			(at 68.58 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10354,7 +10500,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 161.29 0)
+			(at 68.58 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10363,7 +10509,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 161.29 0)
+			(at 68.58 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10658,6 +10804,70 @@
 			(project ""
 				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 36.83 168.91 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4669f520-e6ba-489b-a512-109ff8d705df")
+		(property "Reference" "H1"
+			(at 39.37 167.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 39.37 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopOnly"
+			(at 36.83 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 36.83 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -11671,7 +11881,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
-		(at 36.83 154.94 0)
+		(at 45.72 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11680,7 +11890,7 @@
 		(fields_autoplaced yes)
 		(uuid "754d39ca-ac68-4cc7-acba-80f9f7b56630")
 		(property "Reference" "J1"
-			(at 37.465 147.32 0)
+			(at 46.355 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11688,7 +11898,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03_Pin"
-			(at 37.465 149.86 0)
+			(at 46.355 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11696,7 +11906,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Harwin:Harwin_M20-89003xx_1x03_P2.54mm_Horizontal"
-			(at 36.83 154.94 0)
+			(at 45.72 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11705,7 +11915,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 154.94 0)
+			(at 45.72 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11714,7 +11924,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 36.83 154.94 0)
+			(at 45.72 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12575,6 +12785,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 36.83 173.99 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac79353d-7b1d-4daa-8afe-aa01d6faaecc")
+		(property "Reference" "H2"
+			(at 39.37 172.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 39.37 175.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopOnly"
+			(at 36.83 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 36.83 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 140.97 152.4 0)
 		(unit 1)
@@ -12705,6 +12979,142 @@
 			(project "NIMH-battery-charger"
 				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
 					(reference "BT2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 147.32 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3fa6d57-30c8-4754-b89a-b02be75ea5d6")
+		(property "Reference" "TP8"
+			(at 152.4 95.2499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 152.4 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 147.32 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 147.32 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "029a9678-60f0-4d2f-b39e-17f2c948ea36")
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 147.32 92.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b67b66d7-9e9a-4e55-b6b5-795a6e07e43f")
+		(property "Reference" "TP7"
+			(at 152.4 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 152.4 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 147.32 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 147.32 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "deb6bc5e-fa2c-41dd-ac9f-aa42954086fd")
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -13776,6 +14186,70 @@
 			(project "NIMH-battery-charger"
 				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
 					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 36.83 179.07 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f65e5054-7206-4f59-bbea-fe3512a3683c")
+		(property "Reference" "H3"
+			(at 39.37 177.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 39.37 180.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopOnly"
+			(at 36.83 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 36.83 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "NIMH-battery-charger"
+				(path "/0d2dca8c-c927-4122-be5b-6109da7ea2cf"
+					(reference "H3")
 					(unit 1)
 				)
 			)
