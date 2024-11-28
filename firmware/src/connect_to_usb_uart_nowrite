@@ -1,0 +1,7 @@
+#!/bin/bash
+# Start serial console from USB2TTL
+echo "Reading from ttyACM0"
+dmesg | grep tty
+#chmod 666 /dev/ttyUSB0
+stty -F /dev/ttyACM0 115200
+cat < /dev/ttyACM0 #| ts '[%Y-%m-%d %H:%M:%S]' 
