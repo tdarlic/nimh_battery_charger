@@ -131,4 +131,5 @@
 :plugins:
   :enabled:
     - module_generator
+    - report_tests_pretty_stdout
 ...
