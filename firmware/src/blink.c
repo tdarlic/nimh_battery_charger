@@ -3,7 +3,6 @@
 #include <stdio.h>
 
 // This is only for devboard
-//
 uint16_t adc1, adc2, adc3, adc4 = 0;
 
 #define PIN_LED PD6
