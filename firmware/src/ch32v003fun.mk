@@ -63,7 +63,14 @@ CFLAGS+= \
 LDFLAGS+=-T $(LINKER_SCRIPT) -Wl,--gc-sections
 FILES_TO_COMPILE:=$(SYSTEM_C) $(TARGET).$(TARGET_EXT) $(ADDITIONAL_C_FILES) 
 
-$(OUTDIR)/$(TARGET).bin : $(TARGET).elf
+DEPS := $(FILES_TO_COMPILE:%.c=$(OUTDIR)/%.d)
+-include $(DEPS)
+
+$(OUTDIR)/%.d: %.c
+	mkdir -p $(OUTDIR)
+	$(PREFIX)-gcc -M $(CFLAGS) $< > $@
+
+$(OUTDIR)/$(TARGET).bin : $(OUTDIR)/$(TARGET).elf
 	mkdir -p $(OUTDIR)
 	$(PREFIX)-objdump -S $^ > $(OUTDIR)/$(TARGET).lst
 	$(PREFIX)-objdump -t $^ > $(OUTDIR)/$(TARGET).map
@@ -105,7 +112,7 @@ FLASH_COMMAND?=$(MINICHLINK)/minichlink -w $< $(WRITE_SECTION) -b
 $(GENERATED_LD_FILE) :
 	$(PREFIX)-gcc -E -P -x c -DTARGET_MCU=$(TARGET_MCU) -DMCU_PACKAGE=$(MCU_PACKAGE) -DTARGET_MCU_LD=$(TARGET_MCU_LD) -DTARGET_MCU_MEMORY_SPLIT=$(TARGET_MCU_MEMORY_SPLIT) $(CH32V003FUN)/ch32v003fun.ld > $(GENERATED_LD_FILE)
 
-$(TARGET).elf : $(FILES_TO_COMPILE) $(LINKER_SCRIPT) $(EXTRA_ELF_DEPENDENCIES)
+$(OUTDIR)/$(TARGET).elf : $(FILES_TO_COMPILE) $(LINKER_SCRIPT) $(EXTRA_ELF_DEPENDENCIES)
 	$(PREFIX)-gcc -o $@ $(FILES_TO_COMPILE) $(CFLAGS) $(LDFLAGS)
 
 # Rule for independently building ch32v003fun.o indirectly, instead of recompiling it from source every time.
