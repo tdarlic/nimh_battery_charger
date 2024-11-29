@@ -4,3 +4,4 @@
 .cache/
 *.lst
 *.map
+build/
