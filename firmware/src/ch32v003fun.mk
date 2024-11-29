@@ -63,13 +63,6 @@ CFLAGS+= \
 LDFLAGS+=-T $(LINKER_SCRIPT) -Wl,--gc-sections
 FILES_TO_COMPILE:=$(SYSTEM_C) $(TARGET).$(TARGET_EXT) $(ADDITIONAL_C_FILES) 
 
-DEPS := $(FILES_TO_COMPILE:%.c=$(OUTDIR)/%.d)
--include $(DEPS)
-
-$(OUTDIR)/%.d: %.c
-	mkdir -p $(OUTDIR)
-	$(PREFIX)-gcc -M $(CFLAGS) $< > $@
-
 $(OUTDIR)/$(TARGET).bin : $(OUTDIR)/$(TARGET).elf
 	mkdir -p $(OUTDIR)
 	$(PREFIX)-objdump -S $^ > $(OUTDIR)/$(TARGET).lst
