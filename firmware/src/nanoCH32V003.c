@@ -19,7 +19,7 @@ uint16_t pwmval(){
 	
 	cnt = cnt + dir;
 	out = cnt * cnt * cnt;
-	printf("out: %d\n", out);
+	// printf("out: %d\n", out);
 
 	if (out > MAXLEDPWM){
 		dir = -1;	

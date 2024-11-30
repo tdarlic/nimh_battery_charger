@@ -19,12 +19,12 @@
       "-I.",
       "-Wall",
       "-o",
-      "blink.elf",
+      "build/nanoCH32V003.elf",
       "../ch32v003fun/ch32v003fun/ch32v003fun.c"
     ],
     "directory": "/home/tomislav/Documents/Kicad/projects/nimh_battery_charger/firmware/src",
     "file": "/home/tomislav/Documents/Kicad/projects/nimh_battery_charger/firmware/ch32v003fun/ch32v003fun/ch32v003fun.c",
-    "output": "/home/tomislav/Documents/Kicad/projects/nimh_battery_charger/firmware/src/blink.elf"
+    "output": "/home/tomislav/Documents/Kicad/projects/nimh_battery_charger/firmware/src/build/nanoCH32V003.elf"
   },
   {
     "arguments": [
@@ -46,11 +46,11 @@
       "-I.",
       "-Wall",
       "-o",
-      "blink.elf",
-      "blink.c"
+      "build/nanoCH32V003.elf",
+      "nanoCH32V003.c"
     ],
     "directory": "/home/tomislav/Documents/Kicad/projects/nimh_battery_charger/firmware/src",
-    "file": "/home/tomislav/Documents/Kicad/projects/nimh_battery_charger/firmware/src/blink.c",
-    "output": "/home/tomislav/Documents/Kicad/projects/nimh_battery_charger/firmware/src/blink.elf"
+    "file": "/home/tomislav/Documents/Kicad/projects/nimh_battery_charger/firmware/src/nanoCH32V003.c",
+    "output": "/home/tomislav/Documents/Kicad/projects/nimh_battery_charger/firmware/src/build/nanoCH32V003.elf"
   }
 ]
