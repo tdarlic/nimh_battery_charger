@@ -22,7 +22,7 @@ uint16_t adc1, adc2, adc3, adc4 = 0;
 
 #define PIN_LED PD6
 
-#define DELAYS 500
+#define DELAYS 1000
 #define MINLED 2
 #define MAXLED 1500
 #define LEDSPEED 70
@@ -159,14 +159,12 @@ int main()
 	printf("ADC test\n");
 	while(1)
 	{
-		// uint32_t targend = SysTick->CNT + n;
-		// while( ((int32_t)( SysTick->CNT - targend )) < 0 );
-		Delay_Ms( DELAYS );
 		// Read all 4 adc
 		adc1 = GPIO_analogRead(GPIO_Ain4_D3);
 		adc2 = GPIO_analogRead(GPIO_Ain7_D4);
 		adc3 = GPIO_analogRead(GPIO_Ain2_C4);
 		adc4 = GPIO_analogRead(GPIO_Ain3_D2);
 		printf("[%d] ADC: %d | %d | %d | %d\n", millis(), adc1, adc2, adc3, adc4);
+		Delay_Ms( DELAYS );
 	}
 }
