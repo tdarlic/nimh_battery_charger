@@ -108,6 +108,12 @@ void SysTick_Handler(void)
 	 }
 }
 
+void TIM1_UP_IRQHandler(void) __attribute__((interrupt));
+void TIM1_UP_IRQHandler(void)
+{
+	printf("Evo me\r\n");
+}
+
 void printRCC(void){
 	uint32_t regtemp, trim;
 	regtemp = RCC->CTLR;
@@ -127,12 +133,28 @@ void printRCC(void){
 	printf("HSITRIM: 0x%02lX\r\n", (unsigned long) trim);
 }
 
+void printTIM1(void){
+	uint32_t ctrl1, ctrl2;
+	ctrl1 = TIM1->CTLR1;
+	ctrl2 = TIM1->INTFR;
+	printf("Printing TIM1 registers:\r\n");
+	printf("CTRL1: %X\r\n", ctrl1);
+	printf("CTRL2: %X\r\n", ctrl1);
+	printf("OPM: %d\r\n", (uint8_t) (ctrl1 & TIM_OPM));
+	printf("DIR: %d\r\n", (uint8_t) (ctrl1 & TIM_DIR));
+	printf("TIF: %d\r\n", (uint8_t) (ctrl1 & TIM_TIF));
+}
+
 int main()
 {
 	SystemInit();
 	systick_init();
 
+	GPIO_tim1_init();
+	NVIC_EnableIRQ(TIM1_UP_IRQn);
+
 	printRCC();
+	printTIM1();
 
 	GPIO_port_enable(GPIO_port_C);
 	GPIO_port_enable(GPIO_port_D);
@@ -156,6 +178,7 @@ int main()
 	GPIO_tim2_init();
 	GPIO_tim2_enableCH(3);
 
+
 	printf("ADC test\n");
 	while(1)
 	{
@@ -164,6 +187,7 @@ int main()
 		adc2 = GPIO_analogRead(GPIO_Ain7_D4);
 		adc3 = GPIO_analogRead(GPIO_Ain2_C4);
 		adc4 = GPIO_analogRead(GPIO_Ain3_D2);
+		printf("TIM1_CNT / TIM1_RPTCNT: %d / %d\r\n", TIM1->CNT, TIM1->RPTCR);
 		printf("[%d] ADC: %d | %d | %d | %d\n", millis(), adc1, adc2, adc3, adc4);
 		Delay_Ms( DELAYS );
 	}
