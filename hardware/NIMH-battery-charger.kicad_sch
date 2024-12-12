@@ -9726,6 +9726,28 @@
 			"AAAAAElFTkSuQmCC"
 		)
 	)
+	(text "100R - ID30\n1N4148 - ID162"
+		(exclude_from_sim no)
+		(at 225.044 95.758 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7e706565-6360-44cf-b753-37b29f99887e")
+	)
+	(text "Reverse LED - ID27\n220R - ID94"
+		(exclude_from_sim no)
+		(at 174.752 18.034 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ab3d1d2a-41d6-45e5-a7cf-9319a6094d8b")
+	)
 	(text "D7 is the main LED\nD5 - Bat 1\nD6 - Bat 2\nD8 - Bat 3\nD10 - Bat 4"
 		(exclude_from_sim no)
 		(at 214.376 24.892 0)
