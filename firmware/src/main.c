@@ -22,25 +22,25 @@ uint16_t adc1, adc2, adc3, adc4 = 0;
 
 #define PIN_LED PD6
 
-#define DELAYS 1000
+#define DELAYS 100
 #define MINLED 2
 #define MAXLED 2000
 #define LEDSPEED 200
 
-#define LED_MAIN_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 2), high)
-#define LED_MAIN_OFF GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 2), low)
+#define LED_MAIN_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 2), low)
+#define LED_MAIN_OFF GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 2), high)
 
-#define LED1_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_D, 7), high)
-#define LED1_OFF GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_D, 7), low)
+#define LED1_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_D, 7), low)
+#define LED1_OFF GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_D, 7), high)
 
-#define LED2_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 1), high)
-#define LED2_OFF GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 1), low)
+#define LED2_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 1), low)
+#define LED2_OFF GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 1), high)
 
-#define LED3_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 0), high)
-#define LED3_OFF GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 0), low)
+#define LED3_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_D, 0), low)
+#define LED3_OFF GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_D, 0), high)
 
-#define LED4_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_C, 0), high)
-#define LED4_OFF GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_C, 0), low)
+#define LED4_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_C, 0), low)
+#define LED4_OFF GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_C, 0), high)
 
 /**
 * Returns value for PWM
@@ -120,10 +120,75 @@ void SysTick_Handler(void)
 	 }
 }
 
+
+int FLASH_GetBank1Status(void)
+{
+	int flashstatus = FLASH_COMPLETE;
+
+	if((FLASH->STATR & FLASH_FLAG_BANK1_BSY) == FLASH_FLAG_BSY)
+	{
+		flashstatus = FLASH_BUSY;
+	}
+	else
+	{
+		if((FLASH->STATR & FLASH_FLAG_BANK1_WRPRTERR) != 0)
+		{
+			flashstatus = FLASH_ERROR_WRP;
+		}
+		else
+		{
+			flashstatus = FLASH_COMPLETE;
+		}
+	}
+	return flashstatus;
+}
+
+int FLASH_WaitForLastOperation(uint32_t Timeout)
+{
+	int status = FLASH_COMPLETE;
+
+	status = FLASH_GetBank1Status();
+	while((status == FLASH_BUSY) && (Timeout != 0x00))
+	{
+		status = FLASH_GetBank1Status();
+		Timeout--;
+	}
+	if(Timeout == 0x00)
+	{
+		status = FLASH_TIMEOUT;
+	}
+	return status;
+}
+
 int main()
 {
 	SystemInit();
 	systick_init();
+	int status = 0;
+
+	uint16_t OB_STOP = OB_STOP_NoRST;
+	uint16_t OB_IWDG = OB_IWDG_SW;
+	uint16_t OB_STDBY = OB_STDBY_NoRST;
+	uint16_t OB_RST = OB_RST_NoEN;
+	uint16_t OB_BOOT = OB_STARTMODE_BOOT;
+
+    FLASH->OBKEYR = FLASH_KEY1;
+    FLASH->OBKEYR = FLASH_KEY2;
+    status = FLASH_WaitForLastOperation(10000);
+
+    if(status == FLASH_COMPLETE)
+    {
+        FLASH->CTLR |= CR_OPTPG_Set;
+        OB->USER = OB_BOOT | OB_IWDG | (uint16_t)(OB_STOP | (uint16_t)(OB_STDBY | (uint16_t)(OB_RST | (uint16_t)0xc0)));
+
+        status = FLASH_WaitForLastOperation(10000);
+        if(status != FLASH_TIMEOUT)
+        {
+            FLASH->CTLR &= CR_OPTPG_Reset;
+        }
+    }
+
+	printf( "After Write:%04x\n", OB->USER );
 
 	GPIO_tim1_init();
 	NVIC_EnableIRQ(TIM1_UP_IRQn);
@@ -131,6 +196,7 @@ int main()
 	GPIO_port_enable(GPIO_port_C);
 	GPIO_port_enable(GPIO_port_D);
 	GPIO_port_enable(GPIO_port_A);
+
 	// MAIN LED
 	GPIO_pinMode(GPIOv_from_PORT_PIN(GPIO_port_A, 2), GPIO_pinMode_O_pushPull, GPIO_Speed_2MHz);
 	// LED1
@@ -138,13 +204,10 @@ int main()
 	// LED2
 	GPIO_pinMode(GPIOv_from_PORT_PIN(GPIO_port_A, 1), GPIO_pinMode_O_pushPull, GPIO_Speed_2MHz);
 	// LED3
-	GPIO_pinMode(GPIOv_from_PORT_PIN(GPIO_port_A, 0), GPIO_pinMode_O_pushPull, GPIO_Speed_2MHz);
+	GPIO_pinMode(GPIOv_from_PORT_PIN(GPIO_port_D, 0), GPIO_pinMode_O_pushPull, GPIO_Speed_2MHz);
 	// LED4
 	GPIO_pinMode(GPIOv_from_PORT_PIN(GPIO_port_C, 0), GPIO_pinMode_O_pushPull, GPIO_Speed_2MHz);
 
-	// GPIO_pinMode(GPIOv_from_PORT_PIN(GPIO_port_D, 7), GPIO_pinMode_O_pushPull, GPIO_Speed_2MHz);
-	// GPIO_pinMode(GPIOv_from_PORT_PIN(GPIO_port_C, 0), GPIO_pinMode_O_pushPull, GPIO_Speed_2MHz);
-	
 	// GPIO D3 analog in - PD3 - A4 - ADC1
 	GPIO_pinMode(GPIOv_from_PORT_PIN(GPIO_port_D, 3), GPIO_pinMode_I_analog, GPIO_Speed_In);
 	// GPIO D4 analog in - PD4 - A7 - ADC2
@@ -167,7 +230,7 @@ int main()
 		adc3 = GPIO_analogRead(GPIO_Ain2_C4);
 		adc4 = GPIO_analogRead(GPIO_Ain3_D2);
 		// printf("TIM1_CNT / TIM1_RPTCNT: %d / %d\r\n", TIM1->CNT, TIM1->RPTCR);
-		printf("[%d] ADC: %d | %d | %d | %d\n", millis(), adc1, adc2, adc3, adc4);
+		// printf("[%d] ADC: %d | %d | %d | %d\n", millis(), adc1, adc2, adc3, adc4);
 		(adc1 < 500) ? (LED1_ON) : (LED1_OFF);
 		(adc2 < 500) ? (LED2_ON) : (LED2_OFF);
 		(adc3 < 500) ? (LED3_ON) : (LED3_OFF);
