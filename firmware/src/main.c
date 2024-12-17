@@ -1,6 +1,7 @@
 #include "ch32v003_GPIO_branchless.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 // Number of ticks elapsed per millisecond (48,000 when using 48MHz Clock)
 #define SYSTICK_ONE_MILLISECOND ((uint32_t)FUNCONF_SYSTEM_CORE_CLOCK / 1000)
@@ -17,17 +18,47 @@
 // Incremented in the SysTick IRQ - in this example once per millisecond
 volatile uint32_t systick_millis;
 
-// This is only for devboard
-uint16_t adc1, adc2, adc3, adc4 = 0;
 
-#define PIN_LED PD6
+// Holds next transition for flasing / PWM leds
+uint32_t next = 0;
 
-#define DELAYS 100
-#define MINLED 2
-#define MAXLED 2000
-#define LEDSPEED 200
+struct adcval {
+		uint16_t adc;
+		uint16_t padc;
+		uint32_t timer;
+};
 
-#define LED_MAIN_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 2), low)
+// Holds the last value of ADC
+volatile uint16_t adc1 = 2000, adc2 = 2000, adc3 = 2000, adc4 = 2000;
+// Holds the previous value of ADC
+volatile uint16_t ch1 = 0, ch2 = 0, ch3 = 0, ch4 = 0;
+// vaues of timer
+uint32_t tm1 = 0, tm2 = 0, tm3 = 0, tm4 = 0;
+// boolean values for PWM
+bool cp1 = true, cp2 = true, cp3 = true, cp4 = true;
+ 
+#define DELAYS 200
+// ADC treshold - any value below this the system will presume that the battery is charging
+#define ADCTR 500
+
+// LED_PERIOD defines PWM duration period
+#define LED_PERIOD 500
+
+// After CHARGING_PERIOD in second the LED will not blink indicating charged battery
+// By default this is 24 hours
+#define CHARGING_PERIOD 24 * 60 * 60
+
+#define BAT1_IN (adc1 < ADCTR) 
+#define BAT2_IN (adc2 < ADCTR) 
+#define BAT3_IN (adc3 < ADCTR) 
+#define BAT4_IN (adc4 < ADCTR) 
+
+#define BAT1_PLUGGED (ch1 > ADCTR)
+#define BAT2_PLUGGED (ch2 > ADCTR)
+#define BAT3_PLUGGED (ch3 > ADCTR)
+#define BAT4_PLUGGED (ch4 > ADCTR)
+
+#define LED_MAIN_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 2), low);
 #define LED_MAIN_OFF GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_A, 2), high)
 
 #define LED1_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_D, 7), low)
@@ -42,31 +73,6 @@ uint16_t adc1, adc2, adc3, adc4 = 0;
 #define LED4_ON GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_C, 0), low)
 #define LED4_OFF GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_C, 0), high)
 
-/**
-* Returns value for PWM
-* First it increases th value of counter 
-* And than it cubes it
-* Starts decreasing in case that PWM value is larger than MAXLEDPWM
-* Starts increasing in case that counter is less than MINLED
-*/
-inline static uint16_t getpwmval(void){
-	static uint16_t cnt = MINLED;
-	static int8_t dir = 1;
-	uint32_t out = 0;
-	
-	cnt = cnt + dir;
-	out = cnt * cnt * cnt;
-	// printf("out: %d\n", out);
-
-	if (out > MAXLED){
-		dir = -1;	
-	}
-	if (cnt < MINLED){
-		dir = 1;
-	}
-	return out;
-}
-
 /*
  * Initialises the SysTick to trigger an IRQ with auto-reload, using HCLK/1 as
  * its clock source
@@ -75,25 +81,46 @@ void systick_init(void)
 {
 	// Reset any pre-existing configuration
 	SysTick->CTLR = 0x0000;
-	
+
 	// Set the compare register to trigger once per millisecond
 	SysTick->CMP = SYSTICK_ONE_MILLISECOND - 1;
 
 	// Reset the Count Register, and the global millis counter to 0
 	SysTick->CNT = 0x00000000;
 	systick_millis = 0x00000000;
-	
+
 	// Set the SysTick Configuration
 	// NOTE: By not setting SYSTICK_CTLR_STRE, we maintain compatibility with
 	// busywait delay funtions used by ch32v003_fun.
 	SysTick->CTLR |= SYSTICK_CTLR_STE   |  // Enable Counter
-	                 SYSTICK_CTLR_STIE  |  // Enable Interrupts
-	                 SYSTICK_CTLR_STCLK ;  // Set Clock Source to HCLK/1
-	//
-		
-	
+		SYSTICK_CTLR_STIE  |  // Enable Interrupts
+		SYSTICK_CTLR_STCLK ;  // Set Clock Source to HCLK/1
+
 	// Enable the SysTick IRQ
 	NVIC_EnableIRQ(SysTicK_IRQn);
+}
+
+void pwm(void)
+{
+	// This holds the length of the PWM cycle in ms
+	const uint16_t length = LED_PERIOD; 
+	static bool led_on = true;
+	if (systick_millis > next) { 
+		if (led_on){
+			(BAT1_IN) ? (LED1_ON) : (LED1_OFF);
+			(BAT2_IN) ? (LED2_ON) : (LED2_OFF);
+			(BAT3_IN) ? (LED3_ON) : (LED3_OFF);
+			(BAT4_IN) ? (LED4_ON) : (LED4_OFF);
+			led_on = false;
+		} else {
+			if (BAT1_IN && (cp1)) {LED1_OFF;}
+			if (BAT2_IN && (cp2)) {LED2_OFF;}
+			if (BAT3_IN && (cp3)) {LED3_OFF;}
+			if (BAT4_IN && (cp4)) {LED4_OFF;}
+			led_on = true;
+		}
+		next = systick_millis + LED_PERIOD;
+	}
 }
 
 /*
@@ -115,9 +142,15 @@ void SysTick_Handler(void)
 
 	// Increment the milliseconds count
 	systick_millis++;
-	if (!(systick_millis % LEDSPEED)){
-		GPIO_tim2_analogWrite(2, getpwmval());
-	 }
+
+	// do this every second
+	if ((systick_millis % 1000) == 0){
+		if (BAT1_IN) {tm1++;}
+		if (BAT2_IN) {tm2++;}
+		if (BAT3_IN) {tm3++;}
+		if (BAT4_IN) {tm4++;}
+	}
+	pwm();
 }
 
 
@@ -130,13 +163,13 @@ int FLASH_GetBank1Status(void)
 		flashstatus = FLASH_BUSY;
 	}
 	else
-	{
+{
 		if((FLASH->STATR & FLASH_FLAG_BANK1_WRPRTERR) != 0)
 		{
 			flashstatus = FLASH_ERROR_WRP;
 		}
 		else
-		{
+	{
 			flashstatus = FLASH_COMPLETE;
 		}
 	}
@@ -165,28 +198,28 @@ int main()
 	SystemInit();
 	systick_init();
 	int status = 0;
-
 	uint16_t OB_STOP = OB_STOP_NoRST;
 	uint16_t OB_IWDG = OB_IWDG_SW;
 	uint16_t OB_STDBY = OB_STDBY_NoRST;
 	uint16_t OB_RST = OB_RST_NoEN;
 	uint16_t OB_BOOT = OB_STARTMODE_BOOT;
+	struct adcval adcl[4];
 
-    FLASH->OBKEYR = FLASH_KEY1;
-    FLASH->OBKEYR = FLASH_KEY2;
-    status = FLASH_WaitForLastOperation(10000);
+	FLASH->OBKEYR = FLASH_KEY1;
+	FLASH->OBKEYR = FLASH_KEY2;
+	status = FLASH_WaitForLastOperation(10000);
 
-    if(status == FLASH_COMPLETE)
-    {
-        FLASH->CTLR |= CR_OPTPG_Set;
-        OB->USER = OB_BOOT | OB_IWDG | (uint16_t)(OB_STOP | (uint16_t)(OB_STDBY | (uint16_t)(OB_RST | (uint16_t)0xc0)));
+	if(status == FLASH_COMPLETE)
+	{
+		FLASH->CTLR |= CR_OPTPG_Set;
+		OB->USER = OB_BOOT | OB_IWDG | (uint16_t)(OB_STOP | (uint16_t)(OB_STDBY | (uint16_t)(OB_RST | (uint16_t)0xc0)));
 
-        status = FLASH_WaitForLastOperation(10000);
-        if(status != FLASH_TIMEOUT)
-        {
-            FLASH->CTLR &= CR_OPTPG_Reset;
-        }
-    }
+		status = FLASH_WaitForLastOperation(10000);
+		if(status != FLASH_TIMEOUT)
+		{
+			FLASH->CTLR &= CR_OPTPG_Reset;
+		}
+	}
 
 	printf( "After Write:%04x\n", OB->USER );
 
@@ -207,6 +240,12 @@ int main()
 	GPIO_pinMode(GPIOv_from_PORT_PIN(GPIO_port_D, 0), GPIO_pinMode_O_pushPull, GPIO_Speed_2MHz);
 	// LED4
 	GPIO_pinMode(GPIOv_from_PORT_PIN(GPIO_port_C, 0), GPIO_pinMode_O_pushPull, GPIO_Speed_2MHz);
+	
+	//  switch off all leds
+	LED1_OFF;
+	LED2_OFF;
+	LED3_OFF;
+	LED4_OFF;
 
 	// GPIO D3 analog in - PD3 - A4 - ADC1
 	GPIO_pinMode(GPIOv_from_PORT_PIN(GPIO_port_D, 3), GPIO_pinMode_I_analog, GPIO_Speed_In);
@@ -221,6 +260,7 @@ int main()
 	GPIO_ADCinit();
 
 	printf("ADC test\n");
+	
 	while(1)
 	{
 		LED_MAIN_ON;
@@ -229,12 +269,29 @@ int main()
 		adc2 = GPIO_analogRead(GPIO_Ain7_D4);
 		adc3 = GPIO_analogRead(GPIO_Ain2_C4);
 		adc4 = GPIO_analogRead(GPIO_Ain3_D2);
+
+		// Now reset the timer if battery has just been plugged
+		if (BAT1_PLUGGED) {tm1 = 0; cp1 = true;}
+		if (BAT2_PLUGGED) {tm2 = 0; cp2 = true;}
+		if (BAT3_PLUGGED) {tm3 = 0; cp3 = true;}
+		if (BAT4_PLUGGED) {tm4 = 0; cp4 = true;}
+
+		// remeber the old value of ADC
+		ch1 = adc1;
+		ch2 = adc2;
+		ch3 = adc3;
+		ch4 = adc4;
+
+		if (tm1 > CHARGING_PERIOD) {cp1 = false;}
+		if (tm2 > CHARGING_PERIOD) {cp2 = false;}
+		if (tm3 > CHARGING_PERIOD) {cp3 = false;}
+		if (tm4 > CHARGING_PERIOD) {cp4 = false;}
+
+
 		// printf("TIM1_CNT / TIM1_RPTCNT: %d / %d\r\n", TIM1->CNT, TIM1->RPTCR);
-		// printf("[%d] ADC: %d | %d | %d | %d\n", millis(), adc1, adc2, adc3, adc4);
-		(adc1 < 500) ? (LED1_ON) : (LED1_OFF);
-		(adc2 < 500) ? (LED2_ON) : (LED2_OFF);
-		(adc3 < 500) ? (LED3_ON) : (LED3_OFF);
-		(adc4 < 500) ? (LED4_ON) : (LED4_OFF);
+		printf("[%10d] ADC: %d | %d | %d | %d\n", millis(), adc1, adc2, adc3, adc4);
+		printf("[%10d] TIM: %d | %d | %d | %d\n", millis(), tm1, tm2, tm3, tm4);
+		printf("Next:%d\n", next);
 		Delay_Ms( DELAYS );
 	}
 }
