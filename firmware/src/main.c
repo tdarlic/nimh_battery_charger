@@ -259,7 +259,7 @@ int main()
 	GPIO_ADC_set_sampletimes_all(GPIO_ADC_sampletime);
 	GPIO_ADCinit();
 
-	printf("ADC test\n");
+	// printf("ADC test\n");
 	
 	while(1)
 	{
@@ -289,9 +289,9 @@ int main()
 
 
 		// printf("TIM1_CNT / TIM1_RPTCNT: %d / %d\r\n", TIM1->CNT, TIM1->RPTCR);
-		printf("[%10d] ADC: %d | %d | %d | %d\n", millis(), adc1, adc2, adc3, adc4);
-		printf("[%10d] TIM: %d | %d | %d | %d\n", millis(), tm1, tm2, tm3, tm4);
-		printf("Next:%d\n", next);
+		// printf("[%10d] ADC: %d | %d | %d | %d\n", millis(), adc1, adc2, adc3, adc4);
+		// printf("[%10d] TIM: %d | %d | %d | %d\n", millis(), tm1, tm2, tm3, tm4);
+		// printf("Next:%d\n", next);
 		Delay_Ms( DELAYS );
 	}
 }
