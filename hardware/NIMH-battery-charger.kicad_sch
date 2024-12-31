@@ -9737,6 +9737,19 @@
 		)
 		(uuid "7e706565-6360-44cf-b753-37b29f99887e")
 	)
+	(text "Charging now with ~50mA\nChange R1 to R5 to 220 to reduce the charging current\nCharging current should be 20-30mA"
+		(exclude_from_sim no)
+		(at 238.252 101.854 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "872e3c01-b510-4f70-8ebd-8dcffd2dbfe4")
+	)
 	(text "Reverse LED - ID27\n220R - ID94"
 		(exclude_from_sim no)
 		(at 174.752 18.034 0)
