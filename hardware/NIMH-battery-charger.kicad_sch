@@ -9737,7 +9737,7 @@
 		)
 		(uuid "7e706565-6360-44cf-b753-37b29f99887e")
 	)
-	(text "Charging now with ~50mA\nChange R1 to R5 to 220 to reduce the charging current\nCharging current should be 20-30mA"
+	(text "Measured charging current is 27 mA"
 		(exclude_from_sim no)
 		(at 238.252 101.854 0)
 		(effects
