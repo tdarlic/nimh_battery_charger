@@ -41,6 +41,10 @@ Must be configured to be GPIO and not NRST pin
 ```shell
 ./minichlink -D
 ```
+New make command was added to do this
+```shell
+make nrstoff
+```
 
 ## Quick reference
 ![ch32v003f4u6](https://raw.githubusercontent.com/Tengo10/pinout-overview/main/pinouts/CH32v003/ch32v003f4u6.svg)
