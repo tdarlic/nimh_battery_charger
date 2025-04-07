@@ -103,7 +103,6 @@ void systick_init(void)
 void pwm(void)
 {
 	// This holds the length of the PWM cycle in ms
-	const uint16_t length = LED_PERIOD; 
 	static bool led_on = true;
 	if (systick_millis > next) { 
 		if (led_on){
@@ -203,7 +202,6 @@ int main()
 	uint16_t OB_STDBY = OB_STDBY_NoRST;
 	uint16_t OB_RST = OB_RST_NoEN;
 	uint16_t OB_BOOT = OB_STARTMODE_BOOT;
-	struct adcval adcl[4];
 
 	FLASH->OBKEYR = FLASH_KEY1;
 	FLASH->OBKEYR = FLASH_KEY2;

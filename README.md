@@ -36,6 +36,11 @@ To upload firmware and perform debugging, you need to ensure that the developmen
 |    GND    | ---> |GND       |
 
 ```
+## NRST [D7] pin AS GPIO
+Must be configured to be GPIO and not NRST pin
+```shell
+./minichlink -D
+```
 
 ## Quick reference
 ![ch32v003f4u6](https://raw.githubusercontent.com/Tengo10/pinout-overview/main/pinouts/CH32v003/ch32v003f4u6.svg)

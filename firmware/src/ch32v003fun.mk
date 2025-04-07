@@ -89,6 +89,9 @@ unbrick :
 gdbserver : 
 	-$(MINICHLINK)/minichlink -baG
 
+nrstoff : 
+	-$(MINICHLINK)/minichlink -D
+
 clangd :
 	make clean
 	bear -- make build
